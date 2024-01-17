@@ -1,358 +1,362 @@
-[
-  {
-    "name": "Truyện YY",
-    "id": "0",
-    "timeout": "15000",
-    "home": {
-      "url": "https://truyenyy.vip",
-      "search": {
-        "url": "https://truyenyy.vip/web-api/novel/search-novel-autocomplete/?q={query}",
-        "css_href": "url",
-        "css_title": ["title", "num_chapters", "status"]
+{
+  "version":"1",
+  "cfgs":
+  [
+    {
+      "name": "Truyện YY",
+      "id": "0",
+      "timeout": "15000",
+      "home": {
+        "url": "https://truyenyy.vip",
+        "search": {
+          "url": "https://truyenyy.vip/web-api/novel/search-novel-autocomplete/?q={query}",
+          "css_href": "url",
+          "css_title": ["title", "num_chapters", "status"]
+        },
+        "topics": [
+          {
+            "title": "Truyện Mới Cập Nhật",
+            "direction": "horizontal",
+            "css_list": "section.home-module:nth-of-type(1) a.slider-item",
+            "css_title": "",
+            "css_href": "",
+            "css_image": "img",
+            "full_list": {
+              "url": [
+                "https://truyenyy.vip/truyen-moi-cap-nhat/"
+              ],
+              "css_list": ".weui-panel__bd a",
+              "css_title": "",
+              "css_href": "",
+              "css_image": "img"
+            }
+          },
+          {
+            "title": "Truyện dịch xong",
+            "direction": "horizontal",
+            "css_list": "section.home-module:nth-of-type(2) a.slider-item",
+            "css_title": "",
+            "css_href": "",
+            "css_image": "img",
+            "full_list": {
+              "url": [
+                "https://truyenyy.vip/truyen-full/top-tuan/"
+              ],
+              "css_list": ".weui-panel__bd a",
+              "css_title": "",
+              "css_href": "",
+              "css_image": "img"
+            }
+          },
+          {
+            "title": "Truyện sáng tác hay",
+            "direction": "horizontal",
+            "css_list": "section.home-module:nth-of-type(3) a.slider-item",
+            "css_title": "",
+            "css_href": "",
+            "css_image": "img",
+            "full_list": {
+              "url": [
+                "https://truyenyy.vip/truyen-sang-tac/"
+              ],
+              "css_list": ".weui-panel__bd a",
+              "css_title": "",
+              "css_href": "",
+              "css_image": "img"
+            }
+          },
+          {
+            "title": "Lựa chọn của biên tập viên",
+            "direction": "horizontal",
+            "css_list": "section.home-module:nth-of-type(5) a.slider-item",
+            "css_title": "",
+            "css_href": "",
+            "css_image": "img",
+            "full_list": {
+              "url": [
+                "https://truyenyy.vip/yy-collections/"
+              ],
+              "css_list": ".slider-item",
+              "css_title": "",
+              "css_href": "",
+              "css_image": "img"
+            }
+          }
+        ]
       },
-      "topics": [
-        {
-          "title": "Truyện Mới Cập Nhật",
-          "direction": "horizontal",
-          "css_list": "section.home-module:nth-of-type(1) a.slider-item",
-          "css_title": "",
-          "css_href": "",
-          "css_image": "img",
-          "full_list": {
-            "url": [
-              "https://truyenyy.vip/truyen-moi-cap-nhat/"
-            ],
-            "css_list": ".weui-panel__bd a",
-            "css_title": "",
-            "css_href": "",
-            "css_image": "img"
-          }
-        },
-        {
-          "title": "Truyện dịch xong",
-          "direction": "horizontal",
-          "css_list": "section.home-module:nth-of-type(2) a.slider-item",
-          "css_title": "",
-          "css_href": "",
-          "css_image": "img",
-          "full_list": {
-            "url": [
-              "https://truyenyy.vip/truyen-full/top-tuan/"
-            ],
-            "css_list": ".weui-panel__bd a",
-            "css_title": "",
-            "css_href": "",
-            "css_image": "img"
-          }
-        },
-        {
-          "title": "Truyện sáng tác hay",
-          "direction": "horizontal",
-          "css_list": "section.home-module:nth-of-type(3) a.slider-item",
-          "css_title": "",
-          "css_href": "",
-          "css_image": "img",
-          "full_list": {
-            "url": [
-              "https://truyenyy.vip/truyen-sang-tac/"
-            ],
-            "css_list": ".weui-panel__bd a",
-            "css_title": "",
-            "css_href": "",
-            "css_image": "img"
-          }
-        },
-        {
-          "title": "Lựa chọn của biên tập viên",
-          "direction": "horizontal",
-          "css_list": "section.home-module:nth-of-type(5) a.slider-item",
-          "css_title": "",
-          "css_href": "",
-          "css_image": "img",
-          "full_list": {
-            "url": [
-              "https://truyenyy.vip/yy-collections/"
-            ],
-            "css_list": ".slider-item",
-            "css_title": "",
-            "css_href": "",
-            "css_image": "img"
-          }
-        }
-      ]
-    },
-    "book": {
-      "url": "https://truyenyy.vip{href}",
-      "css_book_image": ".novel-cover img",
-      "css_detail": "div.info",
-      "css_summary": "#summary_markdown",
-      "css_chapters_href": ".weui-btn_default",
-      "chapters_href_replace": "https://truyenyy.vip{href}?p={page}&nf={direction}",
-      "direction_desc": "yes",
-      "direction_asc": "no",
-      "css_list": "main>div>div.weui-cells:nth-of-type(2) a",
-      "css_title": "div:nth-of-type(2)>div",
-      "css_href": ""
-    },
-    "chapter": {
-      "url": "https://truyenyy.vip{href}",
-      "css_href": "",
-      "css_title": ".d-flex",
-      "css_content": "#inner_chap_content_1",
-      "css_next": ".flexbox-item:nth-of-type(2)>a",
-      "css_prev": ".flexbox-item>a"
-    }
-  },
-  {
-    "name": "Tàng thư viện",
-    "id": "1",
-    "timeout": "60000",
-    "headers": {
-      "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
-    },
-    "home": {
-      "url": "https://m.truyen.tangthuvien.vn/",
-      "search": {
-        "url": "https://m.truyen.tangthuvien.vn/search-result?term={query}",
-        "filter": {"type": "story"},
-        "css_href": "url",
-        "tran_href": "https://m.truyen.tangthuvien.vn/doc-truyen/{href}",
-        "css_id": "id",
-        "css_title": ["name", "author", "number"]
+      "book": {
+        "url": "https://truyenyy.vip{href}",
+        "css_book_image": ".novel-cover img",
+        "css_detail": "div.info",
+        "css_summary": "#summary_markdown",
+        "css_chapters_href": ".weui-btn_default",
+        "chapters_href_replace": "https://truyenyy.vip{href}?p={page}&nf={direction}",
+        "direction_desc": "yes",
+        "direction_asc": "no",
+        "css_list": "main>div>div.weui-cells:nth-of-type(2) a",
+        "css_title": "div:nth-of-type(2)>div",
+        "css_href": ""
       },
-      "topics": [
-        {
-          "title": "Truyện Mới Cập Nhật",
-          "direction": "vertical",
-          "css_list": ".block-update .tab-list .item",
-          "css_title": ".story-detail",
-          "css_href": "a",
-          "css_image": ".story-image img",
-          "full_list": {
-            "url": "https://m.truyen.tangthuvien.vn/moi-cap-nhat-loading/1?page={page}",
-            "css_list": ".book-item",
-            "css_title": ".story-detail",
-            "css_href": "a",
-            "css_image": ".story-image img"
-          }
-        },
-        {
-          "title": "Truyện xem nhiều",
-          "direction": "vertical",
-          "css_list": ".block-hots .item",
-          "css_title": ".story-detail",
-          "css_href": "a",
-          "css_image": ".story-image img",
-          "full_list": {
-            "url": "https://m.truyen.tangthuvien.vn/xem-nhieu-loading?page={page}",
-            "css_list": ".book-item",
-            "css_title": ".story-detail",
-            "css_href": "a",
-            "css_image": ".story-image img"
-          }
-        },
-        {
-          "title": "Truyện đề cử tháng",
-          "direction": "vertical",
-          "css_list": ".block-news .book-item",
-          "css_title": ".story-detail",
-          "css_href": "a",
-          "css_image": ".story-image img",
-          "full_list": {
-            "url": "https://m.truyen.tangthuvien.vn/truyen-moi-loading?page={page}",
-            "css_list": ".book-item",
-            "css_title": ".story-detail",
-            "css_href": "a",
-            "css_image": ".story-image img"
-          }
-        },
-        {
-          "title": "Truyện đã hoàn thành",
-          "direction": "vertical",
-          "css_list": ".block-finishs .book-item",
-          "css_title": ".story-detail",
-          "css_href": "a",
-          "css_image": ".story-image img",
-          "full_list": {
-            "url": "https://m.truyen.tangthuvien.vn/truyen-hoan-thanh-loading?page={page}",
-            "css_list": ".book-item",
-            "css_title": ".story-detail",
-            "css_href": "a",
-            "css_image": ".story-image img"
-          }
-        }
-      ]
+      "chapter": {
+        "url": "https://truyenyy.vip{href}",
+        "css_href": "",
+        "css_title": ".d-flex",
+        "css_content": "#inner_chap_content_1",
+        "css_next": ".flexbox-item:nth-of-type(2)>a",
+        "css_prev": ".flexbox-item>a"
+      }
     },
-    "book": {
-      "url": "{href}",
-      "css_book_image": ".book-detail img",
-      "css_detail": "div.detail",
-      "css_summary": "p.book-introduce",
-      "css_book_id": "#btnAddToBookshelf", 
-      "css_chapters_href": "#btnAddToBookshelf",
-      "css_list": ".chapters:nth-of-type(2) a",
-      "css_title": "",
-      "css_href": ""
-    },
-    "chapter": {
-      "url": "{href}",
-      "css_href": "",
-      "css_title": "h4.page-title",
-      "css_content": ".chap-c",
-      "url_next_prev": "https://m.truyen.tangthuvien.vn/control-ajax?story_id={book_id}&chap_id={chapter_id}",
-      "css_next": ".pull-right",
-      "css_prev": "a:not(.pull-right)"
-    }
-  },
-  {
-    "name": "Mê truyện chữ",
-    "id": "2",
-    "timeout": "60000",
-    "headers": {
-      "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
-    },
-    "home": {
-      "url": "https://metruyencv.info/",
-      "search": {	
-        "url": "https://api.truyen.onl/v2/books?sort_by=new_chap_at&type_sort=desc&page=1&kind=1&sex=1&keyword={query}&sign={metruyenchu_sign}",
-        "css_list": "_data",
-        "css_href": "slug",
-        "tran_href": "https://metruyencv.info/truyen/{href}",
-        "css_id": "id",
-        "css_title": ["name", "author_name", "chapter_count"]
+    {
+      "name": "Tàng thư viện",
+      "id": "1",
+      "timeout": "60000",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
       },
-      "topics": [
-        {
-          "title": "Truyện Mới Cập Nhật",
-          "direction": "vertical",
-          "css_list": "section.nh-section:nth-of-type(3)>div.nh-section__body>ul>li>div>div.media-body",
-          "css_title": "a",
-          "css_href": "a",
-          "css_image": "",
-          "full_list": {
-            "url": "https://api.truyen.onl/v2/books?sort_by=new_chap_at&type_sort=desc&page={page}&kind=1&sex=1&sign={metruyenchu_sign}",
-            "css_list": "_data",
-            "css_title": ["name","synopsis","author_name","chapter_count"],
-            "css_href": "slug",
-            "css_id": "id",
-            "tran_href": "https://metruyencv.info/truyen/{href}",
-            "css_image": "poster.150"
-          }
+      "home": {
+        "url": "https://m.truyen.tangthuvien.vn/",
+        "search": {
+          "url": "https://m.truyen.tangthuvien.vn/search-result?term={query}",
+          "filter": {"type": "story"},
+          "css_href": "url",
+          "tran_href": "https://m.truyen.tangthuvien.vn/doc-truyen/{href}",
+          "css_id": "id",
+          "css_title": ["name", "author", "number"]
         },
-        {
-          "title": "Bảng xếp hạng tuần - Đọc nhiều",
-          "direction": "vertical",
-          "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(1)>ul>li",
-          "css_title": "a",
-          "css_href": "a",
-          "css_image": "img",
-          "full_list": {
-            "url": "https://api.truyen.onl/v2/books/ranks?rank_type=1&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
-            "css_list": "_data",
-            "css_title": ["name","synopsis","author_name","chapter_count"],
-            "css_href": "slug",
-            "css_id": "id",
-            "tran_href": "https://metruyencv.info/truyen/{href}",
-            "css_image": "poster.150"
+        "topics": [
+          {
+            "title": "Truyện Mới Cập Nhật",
+            "direction": "vertical",
+            "css_list": ".block-update .tab-list .item",
+            "css_title": ".story-detail",
+            "css_href": "a",
+            "css_image": ".story-image img",
+            "full_list": {
+              "url": "https://m.truyen.tangthuvien.vn/moi-cap-nhat-loading/1?page={page}",
+              "css_list": ".book-item",
+              "css_title": ".story-detail",
+              "css_href": "a",
+              "css_image": ".story-image img"
+            }
+          },
+          {
+            "title": "Truyện xem nhiều",
+            "direction": "vertical",
+            "css_list": ".block-hots .item",
+            "css_title": ".story-detail",
+            "css_href": "a",
+            "css_image": ".story-image img",
+            "full_list": {
+              "url": "https://m.truyen.tangthuvien.vn/xem-nhieu-loading?page={page}",
+              "css_list": ".book-item",
+              "css_title": ".story-detail",
+              "css_href": "a",
+              "css_image": ".story-image img"
+            }
+          },
+          {
+            "title": "Truyện đề cử tháng",
+            "direction": "vertical",
+            "css_list": ".block-news .book-item",
+            "css_title": ".story-detail",
+            "css_href": "a",
+            "css_image": ".story-image img",
+            "full_list": {
+              "url": "https://m.truyen.tangthuvien.vn/truyen-moi-loading?page={page}",
+              "css_list": ".book-item",
+              "css_title": ".story-detail",
+              "css_href": "a",
+              "css_image": ".story-image img"
+            }
+          },
+          {
+            "title": "Truyện đã hoàn thành",
+            "direction": "vertical",
+            "css_list": ".block-finishs .book-item",
+            "css_title": ".story-detail",
+            "css_href": "a",
+            "css_image": ".story-image img",
+            "full_list": {
+              "url": "https://m.truyen.tangthuvien.vn/truyen-hoan-thanh-loading?page={page}",
+              "css_list": ".book-item",
+              "css_title": ".story-detail",
+              "css_href": "a",
+              "css_image": ".story-image img"
+            }
           }
-        },
-        {
-          "title": "Bảng xếp hạng tuần - Thịnh hành",
-          "direction": "vertical",
-          "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(2)>ul>li",
-          "css_title": "a",
-          "css_href": "a",
-          "css_image": "img",
-          "full_list": {
-            "url": "https://api.truyen.onl/v2/books/ranks?rank_type=6&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
-            "css_list": "_data",
-            "css_title": ["name","synopsis","author_name","chapter_count"],
-            "css_href": "slug",
-            "css_id": "id",
-            "tran_href": "https://metruyencv.info/truyen/{href}",
-            "css_image": "poster.150"
-          }
-        },
-        {
-          "title": "Bảng xếp hạng tuần - Đề cử",
-          "direction": "vertical",
-          "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(3)>ul>li",
-          "css_title": "a",
-          "css_href": "a",
-          "css_image": "img",
-          "full_list": {
-            "url": "https://api.truyen.onl/v2/books/ranks?rank_type=2&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
-            "css_list": "_data",
-            "css_title": ["name","synopsis","author_name","chapter_count"],
-            "css_href": "slug",
-            "css_id": "id",
-            "tran_href": "https://metruyencv.info/truyen/{href}",
-            "css_image": "poster.150"
-          }
-        },
-        {
-          "title": "BTV Đề cử",
-          "direction": "vertical",
-          "css_list": "section.nh-section:nth-of-type(6)>div.nh-section__body>div>div>div.swiper-slide",
-          "css_title": "h2>a",
-          "css_href": "a",
-          "css_image": "img",
-          "full_list": {
-            "url": "https://api.truyen.onl/v2/books?sort_by=vote_count&type_sort=desc&page={page}&kind=1&sex=1&manager_pick=1&sign={metruyenchu_sign}",
-            "css_list": "_data",
-            "css_title": ["name","synopsis","author_name","chapter_count"],
-            "css_href": "slug",
-            "css_id": "id",
-            "tran_href": "https://metruyencv.info/truyen/{href}",
-            "css_image": "poster.150"
-          }
-        },
-        {
-          "title": "Đánh giá cao",
-          "direction": "vertical",
-          "css_list": "section.nh-section:nth-of-type(8)>div.nh-section__body>ul>li",
-          "css_title": "div>h2>a",
-          "css_href": "a",
-          "css_image": "img",
-          "full_list": {
-            "url": "https://api.truyen.onl/v2/books?sort_by=review_score&type_sort=desc&page={page}&kind=1&sex=1&sign={metruyenchu_sign}",
-            "css_list": "_data",
-            "css_title": ["name","synopsis","author_name","chapter_count"],
-            "css_href": "slug",
-            "css_id": "id",
-            "tran_href": "https://metruyencv.info/truyen/{href}",
-            "css_image": "poster.150"
-          }
-        }
-      ]
+        ]
+      },
+      "book": {
+        "url": "{href}",
+        "css_book_image": ".book-detail img",
+        "css_detail": "div.detail",
+        "css_summary": "p.book-introduce",
+        "css_book_id": "#btnAddToBookshelf", 
+        "css_chapters_href": "#btnAddToBookshelf",
+        "css_list": ".chapters:nth-of-type(2) a",
+        "css_title": "",
+        "css_href": ""
+      },
+      "chapter": {
+        "url": "{href}",
+        "css_href": "",
+        "css_title": "h4.page-title",
+        "css_content": ".chap-c",
+        "url_next_prev": "https://m.truyen.tangthuvien.vn/control-ajax?story_id={book_id}&chap_id={chapter_id}",
+        "css_next": ".pull-right",
+        "css_prev": "a:not(.pull-right)"
+      }
     },
-    "book": {
-      "url": "{href}",
-      "css_book_image": "div.nh-section__body>div>div.mb-1>div>img",
-      "css_detail": "div.nh-section__body>ul",
-      "css_summary": "div.nh-section__body>div>div.content>p",    
-      "css_book_id": "chapter-list-mobile",
-      "css_book_id_att": "book_id",       
-      "css_chapters_href": "a",
-      "chapters_href_replace": "https://api.truyen.onl/v2/chapters?book_id={book_id}&sign={metruyenchu_sign}",
-      
-      "css_list": "_data.chapters",
-      "css_title": "name",
-      "css_href": "index",
-      "css_chapter_id": "id"
-    },
-    "chapter": {
-      "url": "{book_href}/chuong-{href}",
-      "css_href": "",
-      "css_title": ".nh-read__title",
-      "css_content": "#article",
-
-      "css_prev": "a.nh-read__pagination--action",
-      "css_next": "a.nh-read__pagination--action:nth-of-type(2)",
-      "css_prev_next_att": "@click",
-      "css_prev_next_cut_pattern": "(^.*?\\(|\\).*?$)"
-      ,"tran_next_href": "{next_href}"
-      ,"tran_prev_href": "{prev_href}"
-    }
-  }  
-]  
+    {
+      "name": "Mê truyện chữ",
+      "id": "2",
+      "timeout": "60000",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+      },
+      "home": {
+        "url": "https://metruyencv.info/",
+        "search": {	
+          "url": "https://api.truyen.onl/v2/books?sort_by=new_chap_at&type_sort=desc&page=1&kind=1&sex=1&keyword={query}&sign={metruyenchu_sign}",
+          "css_list": "_data",
+          "css_href": "slug",
+          "tran_href": "https://metruyencv.info/truyen/{href}",
+          "css_id": "id",
+          "css_title": ["name", "author_name", "chapter_count"]
+        },
+        "topics": [
+          {
+            "title": "Truyện Mới Cập Nhật",
+            "direction": "vertical",
+            "css_list": "section.nh-section:nth-of-type(3)>div.nh-section__body>ul>li>div>div.media-body",
+            "css_title": "a",
+            "css_href": "a",
+            "css_image": "",
+            "full_list": {
+              "url": "https://api.truyen.onl/v2/books?sort_by=new_chap_at&type_sort=desc&page={page}&kind=1&sex=1&sign={metruyenchu_sign}",
+              "css_list": "_data",
+              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "css_href": "slug",
+              "css_id": "id",
+              "tran_href": "https://metruyencv.info/truyen/{href}",
+              "css_image": "poster.150"
+            }
+          },
+          {
+            "title": "Bảng xếp hạng tuần - Đọc nhiều",
+            "direction": "vertical",
+            "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(1)>ul>li",
+            "css_title": "a",
+            "css_href": "a",
+            "css_image": "img",
+            "full_list": {
+              "url": "https://api.truyen.onl/v2/books/ranks?rank_type=1&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
+              "css_list": "_data",
+              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "css_href": "slug",
+              "css_id": "id",
+              "tran_href": "https://metruyencv.info/truyen/{href}",
+              "css_image": "poster.150"
+            }
+          },
+          {
+            "title": "Bảng xếp hạng tuần - Thịnh hành",
+            "direction": "vertical",
+            "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(2)>ul>li",
+            "css_title": "a",
+            "css_href": "a",
+            "css_image": "img",
+            "full_list": {
+              "url": "https://api.truyen.onl/v2/books/ranks?rank_type=6&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
+              "css_list": "_data",
+              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "css_href": "slug",
+              "css_id": "id",
+              "tran_href": "https://metruyencv.info/truyen/{href}",
+              "css_image": "poster.150"
+            }
+          },
+          {
+            "title": "Bảng xếp hạng tuần - Đề cử",
+            "direction": "vertical",
+            "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(3)>ul>li",
+            "css_title": "a",
+            "css_href": "a",
+            "css_image": "img",
+            "full_list": {
+              "url": "https://api.truyen.onl/v2/books/ranks?rank_type=2&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
+              "css_list": "_data",
+              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "css_href": "slug",
+              "css_id": "id",
+              "tran_href": "https://metruyencv.info/truyen/{href}",
+              "css_image": "poster.150"
+            }
+          },
+          {
+            "title": "BTV Đề cử",
+            "direction": "vertical",
+            "css_list": "section.nh-section:nth-of-type(6)>div.nh-section__body>div>div>div.swiper-slide",
+            "css_title": "h2>a",
+            "css_href": "a",
+            "css_image": "img",
+            "full_list": {
+              "url": "https://api.truyen.onl/v2/books?sort_by=vote_count&type_sort=desc&page={page}&kind=1&sex=1&manager_pick=1&sign={metruyenchu_sign}",
+              "css_list": "_data",
+              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "css_href": "slug",
+              "css_id": "id",
+              "tran_href": "https://metruyencv.info/truyen/{href}",
+              "css_image": "poster.150"
+            }
+          },
+          {
+            "title": "Đánh giá cao",
+            "direction": "vertical",
+            "css_list": "section.nh-section:nth-of-type(8)>div.nh-section__body>ul>li",
+            "css_title": "div>h2>a",
+            "css_href": "a",
+            "css_image": "img",
+            "full_list": {
+              "url": "https://api.truyen.onl/v2/books?sort_by=review_score&type_sort=desc&page={page}&kind=1&sex=1&sign={metruyenchu_sign}",
+              "css_list": "_data",
+              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "css_href": "slug",
+              "css_id": "id",
+              "tran_href": "https://metruyencv.info/truyen/{href}",
+              "css_image": "poster.150"
+            }
+          }
+        ]
+      },
+      "book": {
+        "url": "{href}",
+        "css_book_image": "div.nh-section__body>div>div.mb-1>div>img",
+        "css_detail": "div.nh-section__body>ul",
+        "css_summary": "div.nh-section__body>div>div.content>p",    
+        "css_book_id": "chapter-list-mobile",
+        "css_book_id_att": "book_id",       
+        "css_chapters_href": "a",
+        "chapters_href_replace": "https://api.truyen.onl/v2/chapters?book_id={book_id}&sign={metruyenchu_sign}",
+        
+        "css_list": "_data.chapters",
+        "css_title": "name",
+        "css_href": "index",
+        "css_chapter_id": "id"
+      },
+      "chapter": {
+        "url": "{book_href}/chuong-{href}",
+        "css_href": "",
+        "css_title": ".nh-read__title",
+        "css_content": "#article",
+  
+        "css_prev": "a.nh-read__pagination--action",
+        "css_next": "a.nh-read__pagination--action:nth-of-type(2)",
+        "css_prev_next_att": "@click",
+        "css_prev_next_cut_pattern": "(^.*?\\(|\\).*?$)"
+        ,"tran_next_href": "{next_href}"
+        ,"tran_prev_href": "{prev_href}"
+      }
+    }  
+  ]  
+}
