@@ -353,7 +353,7 @@
         "css_prev": "a.nh-read__pagination--action",
         "css_next": "a.nh-read__pagination--action:nth-of-type(2)",
         "css_prev_next_att": "@click",
-        "css_prev_next_cut_pattern": "(^.*?\(|\).*?$)"
+        "css_prev_next_cut_pattern": "(^.*?\\(|\\).*?$)"
         ,"tran_next_href": "{next_href}"
         ,"tran_prev_href": "{prev_href}"
       }
