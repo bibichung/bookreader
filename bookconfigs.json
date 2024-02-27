@@ -349,6 +349,7 @@
         "css_href": "",
         "css_title": ".nh-read__title",
         "css_content": "#article",
+        "tran_content": "{title} \n\n{content}",
   
         "css_prev": "a.nh-read__pagination--action",
         "css_next": "a.nh-read__pagination--action:nth-of-type(2)",
