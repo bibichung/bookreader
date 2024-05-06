@@ -1,5 +1,5 @@
 {
-  "version":"/",
+  "version":"-",
   "cfgs":
   [
     {
@@ -216,26 +216,26 @@
       },
       "home": {
         "url": "https://metruyencv.info/",
-        "search": {	
-          "url": "https://api.truyen.onl/v2/books?sort_by=new_chap_at&type_sort=desc&page=1&kind=1&sex=1&keyword={query}&sign={metruyenchu_sign}",
-          "css_list": "_data",
+        "search": {
+        	"url": "https://backend.metruyencv.com/api/books/search?gender=1&keyword={query}&kind=1&page=1",
+          "css_list": "data",
           "css_href": "slug",
           "tran_href": "https://metruyencv.info/truyen/{href}",
           "css_id": "id",
-          "css_title": ["name", "author_name", "chapter_count"]
+          "css_title": ["name", "author.name", "chapter_count"]
         },
         "topics": [
           {
             "title": "Truyện Mới Cập Nhật",
             "direction": "vertical",
-            "css_list": "section.nh-section:nth-of-type(3)>div.nh-section__body>ul>li>div>div.media-body",
+            "css_list": "#latest>div.box-content>div",
             "css_title": "a",
             "css_href": "a",
             "css_image": "",
             "full_list": {
-              "url": "https://api.truyen.onl/v2/books?sort_by=new_chap_at&type_sort=desc&page={page}&kind=1&sex=1&sign={metruyenchu_sign}",
-              "css_list": "_data",
-              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
+              "css_list": "data",
+              "css_title": ["name","synopsis","author.name","chapter_count"],
               "css_href": "slug",
               "css_id": "id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
@@ -245,65 +245,48 @@
           {
             "title": "Bảng xếp hạng tuần - Đọc nhiều",
             "direction": "vertical",
-            "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(1)>ul>li",
+            "css_list": "#heroicon-o-eye>div>div",
             "css_title": "a",
             "css_href": "a",
-            "css_image": "img",
+            "css_image": "",
             "full_list": {
-              "url": "https://api.truyen.onl/v2/books/ranks?rank_type=1&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
-              "css_list": "_data",
-              "css_title": ["name","synopsis","author_name","chapter_count"],
-              "css_href": "slug",
-              "css_id": "id",
+              "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=view&year={year}",
+              "css_list": "data",
+              "css_title": ["book.name","book.synopsis","book.author.name","book.chapter_count"],
+              "css_href": "book.slug",
+              "css_id": "book.id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "poster.150"
-            }
-          },
-          {
-            "title": "Bảng xếp hạng tuần - Thịnh hành",
-            "direction": "vertical",
-            "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(2)>ul>li",
-            "css_title": "a",
-            "css_href": "a",
-            "css_image": "img",
-            "full_list": {
-              "url": "https://api.truyen.onl/v2/books/ranks?rank_type=6&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
-              "css_list": "_data",
-              "css_title": ["name","synopsis","author_name","chapter_count"],
-              "css_href": "slug",
-              "css_id": "id",
-              "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "poster.150"
+              "css_image": "book.poster.150"
             }
           },
           {
             "title": "Bảng xếp hạng tuần - Đề cử",
             "direction": "vertical",
-            "css_list": "section.nh-section:nth-of-type(5)>div.nh-section__body>div.tab-content>div:nth-of-type(3)>ul>li",
+            "css_list": "#heroicon-o-ticket>div>div",
             "css_title": "a",
             "css_href": "a",
-            "css_image": "img",
+            "css_image": "",
             "full_list": {
-              "url": "https://api.truyen.onl/v2/books/ranks?rank_type=2&period=2&kind=1&sex=1&page={page}&sign={metruyenchu_sign}",
-              "css_list": "_data",
-              "css_title": ["name","synopsis","author_name","chapter_count"],
-              "css_href": "slug",
-              "css_id": "id",
+              "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=vote&year={year}",
+              "css_list": "data",
+              "css_title": ["book.name","book.synopsis","book.author.name","book.chapter_count"],
+              "css_href": "book.slug",
+              "css_id": "book.id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "poster.150"
+              "css_image": "book.poster.150"
             }
           },
           {
             "title": "BTV Đề cử",
             "direction": "vertical",
-            "css_list": "section.nh-section:nth-of-type(6)>div.nh-section__body>div>div>div.swiper-slide",
-            "css_title": "h2>a",
+            "css_list": "#picked div.space-x-3",
+            "css_title": ".space-y-2 a",
             "css_href": "a",
             "css_image": "img",
             "full_list": {
-              "url": "https://api.truyen.onl/v2/books?sort_by=vote_count&type_sort=desc&page={page}&kind=1&sex=1&manager_pick=1&sign={metruyenchu_sign}",
-              "css_list": "_data",
-              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&filter%5Btype%5D=picked&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
+              "css_list": "data",
+              "css_title": ["name","synopsis","author.name","chapter_count"],
               "css_href": "slug",
               "css_id": "id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
@@ -311,16 +294,16 @@
             }
           },
           {
-            "title": "Đánh giá cao",
+            "title": "Mới hoàn thành",
             "direction": "vertical",
-            "css_list": "section.nh-section:nth-of-type(8)>div.nh-section__body>ul>li",
-            "css_title": "div>h2>a",
+            "css_list": "#completed div.flex",
+            "css_title": "span",
             "css_href": "a",
             "css_image": "img",
             "full_list": {
-              "url": "https://api.truyen.onl/v2/books?sort_by=review_score&type_sort=desc&page={page}&kind=1&sex=1&sign={metruyenchu_sign}",
-              "css_list": "_data",
-              "css_title": ["name","synopsis","author_name","chapter_count"],
+              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&filter%5Bstatus%5D=2&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
+              "css_list": "data",
+              "css_title": ["name","synopsis","author.name","chapter_count"],
               "css_href": "slug",
               "css_id": "id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
@@ -331,15 +314,15 @@
       },
       "book": {
         "url": "{href}",
-        "css_book_image": "div.nh-section__body>div>div.mb-1>div>img",
-        "css_detail": "div.nh-section__body>ul",
-        "css_summary": "div.nh-section__body>div>div.content>p",    
-        "css_book_id": "chapter-list-mobile",
-        "css_book_id_att": "book_id",       
-        "css_chapters_href": "a",
-        "chapters_href_replace": "https://api.truyen.onl/v2/chapters?book_id={book_id}&sign={metruyenchu_sign}",
-        
-        "css_list": "_data.chapters",
+        "css_book_image": "main img",
+        "css_detail": "main .mb-6",
+        "css_summary": "#synopsis .text-base",
+        "css_book_id": "button.text-title",
+        "css_book_id_att": "data-x-data",       
+        "css_book_id_cut_pattern": "(^.*?\\(|\\, null\\).*?$)",
+        "css_chapters_href": "main .mb-3>a",
+        "chapters_href_replace": "https://backend.metruyencv.com/api/chapters?filter%5Bbook_id%5D={book_id}&filter%5Btype%5D=published",        
+        "css_list": "data",
         "css_title": "name",
         "css_href": "index",
         "css_chapter_id": "id"
@@ -347,14 +330,15 @@
       "chapter": {
         "url": "{book_href}/chuong-{href}",
         "css_href": "",
-        "css_title": ".nh-read__title",
-        "css_content": "#article",
+        "css_title": "main h2",
+        "css_content": "#chapter-detail",
         "tran_content": "{title} \n\n{content}",
   
-        "css_prev": "a.nh-read__pagination--action",
-        "css_next": "a.nh-read__pagination--action:nth-of-type(2)",
-        "css_prev_next_att": "@click",
-        "css_prev_next_cut_pattern": "(^.*?\\(|\\).*?$)"
+        "css_prev": "body>script:nth-of-type(2)",
+        "css_next": "body>script:nth-of-type(2)",
+        "css_prev_next_cut_pattern": "(^.*?chapter: |\\, book:.*?$)"
+        ,"json_next_href":"next.index"
+        ,"json_prev_href":"previous.index"
         ,"tran_next_href": "{next_href}"
         ,"tran_prev_href": "{prev_href}"
       }
