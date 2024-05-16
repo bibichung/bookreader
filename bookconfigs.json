@@ -1,5 +1,11 @@
 {
   "version":"-",
+  "gemini":{
+    "model_name":"gemini-1.0-pro",
+    "max_output_token": 2048,
+    "prompt":"sửa các câu dưới đây theo phong cách truyện chưởng để dễ đọc hơn, cố giữ các từ hán việt: 
+    {query}"
+  },
   "cfgs":
   [
     {
