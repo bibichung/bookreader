@@ -7,7 +7,7 @@
     "top_p":0.95,
     "max_output_tokens":8192,
     "max_input_length": 10000,
-    "prompt":"dịch các câu sau đây theo phong cách truyện chưởng để dễ đọc hơn, không thêm giải thích, giữ nguyên số lượng câu: {query}"
+    "prompt":"Viết lại đoạn văn sau cho dễ đọc và sửa theo phong cách truyện chưởng nhưng đừng sửa câu đầu: {query}"
   },
   "cfgs":
   [
