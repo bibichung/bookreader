@@ -1,5 +1,5 @@
 {
-  "version":"-",
+  "version":"*",
   "gemini":{
     "model_name":"gemini-1.5-flash-latest",
     "temperature":1,
@@ -7,7 +7,9 @@
     "top_p":0.95,
     "max_output_tokens":8192,
     "max_input_length": 10000,
-    "prompt":"Viết lại đoạn văn sau cho dễ đọc và sửa theo phong cách truyện chưởng nhưng đừng sửa câu đầu: {query}"
+    "prompt":"Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu: {query}",
+    "prompt2":"Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}",
+    "prompt3":"Viết lại đoạn văn sau cho dễ đọc và sửa theo phong cách truyện chưởng nhưng đừng sửa câu đầu: {query}"
   },
   "cfgs":
   [
