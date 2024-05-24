@@ -323,7 +323,7 @@
           }
         ]
       },
-      "book": {
+      "book_old": {
         "url": "{href}",
         "css_book_image": "main img",
         "css_detail": "main .mb-6",
@@ -338,7 +338,7 @@
         "css_href": "index",
         "css_chapter_id": "id"
       },
-      "chapter": {
+      "chapter_old": {
         "url": "{book_href}/chuong-{href}",
         "css_href": "",
         "css_title": "main h2",
@@ -352,6 +352,34 @@
         ,"json_prev_href":"previous.index"
         ,"tran_next_href": "{next_href}"
         ,"tran_prev_href": "{prev_href}"
+      },
+      "book": {
+        "url": "{href}",
+        "css_book_image": "main img",
+        "css_detail": "main .mb-6",
+        "css_summary": "#synopsis .text-base",
+        "css_book_id": "button.text-title",
+        "css_book_id_att": "data-x-data",       
+        "css_book_id_cut_pattern": "(^.*?\\(|\\, null\\).*?$)",
+        "css_chapters_href": "main .mb-3>a",
+        "chapters_href_replace": "https://backend.metruyencv.com/api/chapters?filter%5Bbook_id%5D={book_id}&filter%5Btype%5D=published",        
+        "css_list": "data",
+        "css_title": "name",
+        "css_href": "id",
+        "css_chapter_id": "id"
+      },
+      "chapter": {
+        "url": "https://backend.metruyencv.com/api/chapters/{href}?hash={hash}",
+        "output_json":true,
+        "css_href": "data.id",
+        "css_id": "data.id",
+        "css_title": "data.name",
+        "css_content": "data.content",
+        "content_decrypt":true,
+        "tran_content": "{title} \n\n{content}",
+  
+        "css_prev": "data.previous.id",
+        "css_next": "data.next.id"
       }
     }  
   ]  
