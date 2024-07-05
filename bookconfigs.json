@@ -7,7 +7,7 @@
             "top_p":0.95,
             "max_output_tokens":8192,
             "max_input_length": 10000,
-            "prompt":"Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
+            "prompt":"Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
             "prompt1":"Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu, giữ nguyên các chữ 'ngươi', 'hắn', 'ta': {query}",
             "prompt2":"Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}"
           },
@@ -18,7 +18,7 @@
             "top_p":0.95,
             "max_output_tokens":8192,
             "max_input_length": 10000,
-            "prompt":"Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
+            "prompt":"Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
             "prompt1":"Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu, giữ nguyên các chữ 'ngươi', 'hắn', 'ta': {query}",
             "prompt2":"Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}"
         }],
