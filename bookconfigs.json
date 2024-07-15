@@ -1,29 +1,30 @@
 {
-  "version":"-",
-  "gemini":[{
-            "model_name":"gemini-1.5-pro",
-            "temperature":1,
-            "top_k":64,
-            "top_p":0.95,
-            "max_output_tokens":8192,
-            "max_input_length": 20000,
-            "prompt":"Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
-            "prompt1":"Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu, giữ nguyên các chữ 'ngươi', 'hắn', 'ta': {query}",
-            "prompt2":"Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}"
-          },
-          {
-            "model_name":"gemini-1.5-flash",
-            "temperature":1,
-            "top_k":64,
-            "top_p":0.95,
-            "max_output_tokens":8192,
-            "max_input_length": 20000,
-            "prompt":"Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
-            "prompt1":"Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu, giữ nguyên các chữ 'ngươi', 'hắn', 'ta': {query}",
-            "prompt2":"Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}"
-        }],
-  "cfgs":
-  [
+  "version": "*",
+  "gemini": [
+    {
+      "model_name": "gemini-1.5-pro",
+      "temperature": 1,
+      "top_k": 64,
+      "top_p": 0.95,
+      "max_output_tokens": 8192,
+      "max_input_length": 20000,
+      "prompt": "Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
+      "prompt1": "Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu, giữ nguyên các chữ 'ngươi', 'hắn', 'ta': {query}",
+      "prompt2": "Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}"
+    },
+    {
+      "model_name": "gemini-1.5-flash",
+      "temperature": 1,
+      "top_k": 64,
+      "top_p": 0.95,
+      "max_output_tokens": 8192,
+      "max_input_length": 20000,
+      "prompt": "Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
+      "prompt1": "Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu, giữ nguyên các chữ 'ngươi', 'hắn', 'ta': {query}",
+      "prompt2": "Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}"
+    }
+  ],
+  "cfgs": [
     {
       "name": "Truyện YY",
       "id": "0",
@@ -32,104 +33,105 @@
         "url": "https://truyenyy.vip",
         "search": {
           "url": "https://truyenyy.vip/web-api/novel/search-novel-autocomplete/?q={query}",
-          "css_href": "url",
-          "css_title": ["title", "num_chapters", "status"]
+          "ret_type": "json",
+          "href": "url",
+          "title": [
+            "title",
+            "num_chapters",
+            "status"
+          ]
         },
         "topics": [
           {
             "id": "1",
             "title": "Truyện Mới Cập Nhật",
             "direction": "horizontal",
-            "css_list": "section.home-module:nth-of-type(1) a.slider-item",
-            "css_title": "",
-            "css_href": "",
-            "css_image": "img",
             "full_list": {
               "url": [
                 "https://truyenyy.vip/truyen-moi-cap-nhat/"
               ],
-              "css_list": ".weui-panel__bd a",
-              "css_title": "",
-              "css_href": "",
-              "css_image": "img"
+              "ret_type": "html",
+              "list": ".weui-panel__bd a",
+              "title": "",
+              "href": "",
+              "image": "img"
             }
           },
           {
             "id": "2",
             "title": "Truyện dịch xong",
             "direction": "horizontal",
-            "css_list": "section.home-module:nth-of-type(2) a.slider-item",
-            "css_title": "",
-            "css_href": "",
-            "css_image": "img",
             "full_list": {
               "url": [
                 "https://truyenyy.vip/truyen-full/top-tuan/"
               ],
-              "css_list": ".weui-panel__bd a",
-              "css_title": "",
-              "css_href": "",
-              "css_image": "img"
+              "ret_type": "html",
+              "list": ".weui-panel__bd a",
+              "title": "",
+              "href": "",
+              "image": "img"
             }
           },
           {
             "id": "3",
             "title": "Truyện sáng tác hay",
             "direction": "horizontal",
-            "css_list": "section.home-module:nth-of-type(3) a.slider-item",
-            "css_title": "",
-            "css_href": "",
-            "css_image": "img",
             "full_list": {
               "url": [
                 "https://truyenyy.vip/truyen-sang-tac/"
               ],
-              "css_list": ".weui-panel__bd a",
-              "css_title": "",
-              "css_href": "",
-              "css_image": "img"
+              "ret_type": "html",
+              "list": ".weui-panel__bd a",
+              "title": "",
+              "href": "",
+              "image": "img"
             }
           },
           {
             "id": "4",
             "title": "Lựa chọn của biên tập viên",
             "direction": "horizontal",
-            "css_list": "section.home-module:nth-of-type(5) a.slider-item",
-            "css_title": "",
-            "css_href": "",
-            "css_image": "img",
             "full_list": {
               "url": [
                 "https://truyenyy.vip/yy-collections/"
               ],
-              "css_list": ".slider-item",
-              "css_title": "",
-              "css_href": "",
-              "css_image": "img"
+              "ret_type": "html",
+              "list": ".slider-item",
+              "title": "",
+              "href": "",
+              "image": "img"
             }
           }
         ]
       },
       "book": {
         "url": "https://truyenyy.vip{href}",
-        "css_book_image": ".novel-cover img",
-        "css_detail": "div.info",
-        "css_summary": "#summary_markdown",
-        "css_chapters_href": ".weui-btn_default",
-        "chapters_href_replace": "https://truyenyy.vip{href}?p={page}&nf={direction}",
-        "direction_desc": "yes",
-        "direction_asc": "no",
-        "css_list": "main>div>div.weui-cells:nth-of-type(2) a",
-        "css_title": "div:nth-of-type(2)>div",
-        "css_href": ""
+        "ret_type": "html",
+        "book_image": ".novel-cover img",
+        "detail": "div.info",
+        "summary": "#summary_markdown",
+        "chapters": {
+          "href": ".weui-btn_default",
+          "href_replace": "https://truyenyy.vip{href}?p={page}&nf={direction}",
+          "direction_desc": "yes",
+          "direction_asc": "no",
+          "ret_type": "html",
+          "list": "main>div>div.weui-cells:nth-of-type(2) a",
+          "chapter_title": "div:nth-of-type(2)>div",
+          "chapter_href": ""
+        }
       },
       "chapter": {
         "url": "https://truyenyy.vip{href}",
-        "css_href": "",
-        "css_title": ".d-flex",
-        "css_content": "#inner_chap_content_1",
-        "css_next": ".flexbox-item:nth-of-type(2)>a",
-        "css_prev": ".flexbox-item>a"
+        "ret_type": "html",
+        "href": "",
+        "title": ".d-flex",
+        "content": "#inner_chap_content_1",
+        "next_prev": {
+          "ret_type": "html",
+          "next": ".flexbox-item:nth-of-type(2)>a",
+          "prev": ".flexbox-item>a"
+        }
       }
     },
     {
@@ -143,98 +145,101 @@
         "url": "https://m.truyen.tangthuvien.vn/",
         "search": {
           "url": "https://m.truyen.tangthuvien.vn/search-result?term={query}",
-          "filter": {"type": "story"},
-          "css_href": "url",
+          "ret_type": "json",
+          "filter": {
+            "type": "story"
+          },
+          "href": "url",
           "tran_href": "https://m.truyen.tangthuvien.vn/doc-truyen/{href}",
-          "css_id": "id",
-          "css_title": ["name", "author", "number"]
+          "id": "id",
+          "title": [
+            "name",
+            "author",
+            "number"
+          ]
         },
         "topics": [
           {
             "id": "1",
             "title": "Truyện Mới Cập Nhật",
             "direction": "vertical",
-            "css_list": ".block-update .tab-list .item",
-            "css_title": ".story-detail",
-            "css_href": "a",
-            "css_image": ".story-image img",
             "full_list": {
               "url": "https://m.truyen.tangthuvien.vn/moi-cap-nhat-loading/1?page={page}",
-              "css_list": ".book-item",
-              "css_title": ".story-detail",
-              "css_href": "a",
-              "css_image": ".story-image img"
+              "ret_type": "html",
+              "list": ".book-item",
+              "title": ".story-detail",
+              "href": "a",
+              "image": ".story-image img"
             }
           },
           {
             "id": "2",
             "title": "Truyện xem nhiều",
             "direction": "vertical",
-            "css_list": ".block-hots .item",
-            "css_title": ".story-detail",
-            "css_href": "a",
-            "css_image": ".story-image img",
             "full_list": {
               "url": "https://m.truyen.tangthuvien.vn/xem-nhieu-loading?page={page}",
-              "css_list": ".book-item",
-              "css_title": ".story-detail",
-              "css_href": "a",
-              "css_image": ".story-image img"
+              "ret_type": "html",
+              "list": ".book-item",
+              "title": ".story-detail",
+              "href": "a",
+              "image": ".story-image img"
             }
           },
           {
             "id": "3",
             "title": "Truyện đề cử tháng",
             "direction": "vertical",
-            "css_list": ".block-news .book-item",
-            "css_title": ".story-detail",
-            "css_href": "a",
-            "css_image": ".story-image img",
             "full_list": {
               "url": "https://m.truyen.tangthuvien.vn/truyen-moi-loading?page={page}",
-              "css_list": ".book-item",
-              "css_title": ".story-detail",
-              "css_href": "a",
-              "css_image": ".story-image img"
+              "ret_type": "html",
+              "list": ".book-item",
+              "title": ".story-detail",
+              "href": "a",
+              "image": ".story-image img"
             }
           },
           {
             "id": "4",
             "title": "Truyện đã hoàn thành",
             "direction": "vertical",
-            "css_list": ".block-finishs .book-item",
-            "css_title": ".story-detail",
-            "css_href": "a",
-            "css_image": ".story-image img",
             "full_list": {
               "url": "https://m.truyen.tangthuvien.vn/truyen-hoan-thanh-loading?page={page}",
-              "css_list": ".book-item",
-              "css_title": ".story-detail",
-              "css_href": "a",
-              "css_image": ".story-image img"
+              "ret_type": "html",
+              "list": ".book-item",
+              "title": ".story-detail",
+              "href": "a",
+              "image": ".story-image img"
             }
           }
         ]
       },
       "book": {
         "url": "{href}",
-        "css_book_image": ".book-detail img",
-        "css_detail": "div.detail",
-        "css_summary": "p.book-introduce",
-        "css_book_id": "#btnAddToBookshelf", 
-        "css_chapters_href": "#btnAddToBookshelf",
-        "css_list": ".chapters:nth-of-type(2) a",
-        "css_title": "",
-        "css_href": ""
+        "ret_type": "html",
+        "book_image": ".book-detail img",
+        "detail": "div.detail",
+        "summary": "p.book-introduce",
+        "book_id": "#btnAddToBookshelf",
+        "chapters": {
+          "href": "#btnAddToBookshelf",
+          "ret_type": "html",
+          "list": ".chapters:nth-of-type(2) a",
+          "chapter_title": "",
+          "chapter_href": ""
+        }
       },
       "chapter": {
         "url": "{href}",
-        "css_href": "",
-        "css_title": "h4.page-title",
-        "css_content": ".chap-c",
-        "url_next_prev": "https://m.truyen.tangthuvien.vn/control-ajax?story_id={book_id}&chap_id={chapter_id}",
-        "css_next": ".pull-right",
-        "css_prev": "a:not(.pull-right)"
+        "ret_type": "html",
+        "href": "",
+        "title": "h4.page-title",
+        "content": ".chap-c",
+        "next_prev": {
+          "url": "https://m.truyen.tangthuvien.vn/control-ajax?story_id={book_id}&chap_id={chapter_id}",
+          "ret_type": "html",
+          "next": ".pull-right",
+          "prev": "a:not(.pull-right)"
+        }
       }
     },
     {
@@ -247,182 +252,175 @@
       "home": {
         "url": "https://metruyencv.info/",
         "search": {
-        	"url": "https://backend.metruyencv.com/api/books/search?gender=1&keyword={query}&kind=1&page=1",
-          "css_list": "data",
-          "css_href": "slug",
+          "url": "https://backend.metruyencv.com/api/books/search?gender=1&keyword={query}&kind=1&page=1",
+          "ret_type": "json",
+          "list": "data",
+          "href": "slug",
           "tran_href": "https://metruyencv.info/truyen/{href}",
-          "css_id": "id",
-          "css_title": ["name", "author.name", "chapter_count"]
+          "id": "id",
+          "title": [
+            "name",
+            "author.name",
+            "chapter_count"
+          ]
         },
         "topics": [
           {
             "id": "1",
             "title": "Truyện Mới Cập Nhật",
             "direction": "vertical",
-            "css_list_old": "#latest>div.box-content>div",
-            "css_title": "a",
-            "css_href": "a",
-            "css_image": "",
             "full_list": {
               "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
-              "css_list": "data",
-              "css_title": ["name","author.name","chapter_count","synopsis"],
-              "css_href": "slug",
-              "css_id": "id",
+              "ret_type": "json",
+              "list": "data",
+              "title": [
+                "name",
+                "author.name",
+                "chapter_count",
+                "synopsis"
+              ],
+              "href": "slug",
+              "id": "id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "poster.150"
+              "image": "poster.150"
             }
           },
           {
             "id": "2",
             "title": "Bảng xếp hạng - Đọc nhiều",
             "direction": "vertical",
-            "css_list_old": "#heroicon-o-eye>div>div",
-            "css_title": "a",
-            "css_href": "a",
-            "css_image": "",
             "full_list": {
               "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=view&year={year}",
-              "css_list": "data",
-              "css_title": ["book.name","book.author.name","book.chapter_count","book.synopsis"],
-              "css_href": "book.slug",
-              "css_id": "book.id",
+              "ret_type": "json",
+              "list": "data",
+              "title": [
+                "book.name",
+                "book.author.name",
+                "book.chapter_count",
+                "book.synopsis"
+              ],
+              "href": "book.slug",
+              "id": "book.id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "book.poster.150"
+              "image": "book.poster.150"
             }
           },
           {
             "id": "3",
             "title": "Bảng xếp hạng - Đề cử",
             "direction": "vertical",
-            "css_list_old": "#heroicon-o-ticket>div>div",
-            "css_title": "a",
-            "css_href": "a",
-            "css_image": "",
             "full_list": {
               "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=vote&year={year}",
-              "css_list": "data",
-              "css_title": ["book.name","book.author.name","book.chapter_count","book.synopsis"],
-              "css_href": "book.slug",
-              "css_id": "book.id",
+              "ret_type": "json",
+              "list": "data",
+              "title": [
+                "book.name",
+                "book.author.name",
+                "book.chapter_count",
+                "book.synopsis"
+              ],
+              "href": "book.slug",
+              "id": "book.id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "book.poster.150"
+              "image": "book.poster.150"
             }
           },
           {
             "id": "4",
             "title": "Bảng xếp hạng - Tặng quà",
             "direction": "vertical",
-            "css_list_old": "#heroicon-o-ticket>div>div",
-            "css_title": "a",
-            "css_href": "a",
-            "css_image": "",
             "full_list": {
               "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=gift&year={year}",
-              "css_list": "data",
-              "css_title": ["book.name","book.author.name","book.chapter_count","book.synopsis"],
-              "css_href": "book.slug",
-              "css_id": "book.id",
+              "ret_type": "json",
+              "list": "data",
+              "title": [
+                "book.name",
+                "book.author.name",
+                "book.chapter_count",
+                "book.synopsis"
+              ],
+              "href": "book.slug",
+              "id": "book.id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "book.poster.150"
+              "image": "book.poster.150"
             }
           },
           {
             "id": "5",
             "title": "BTV Đề cử",
             "direction": "vertical",
-            "css_list_old": "#picked div.space-x-3",
-            "css_title": ".space-y-2 a",
-            "css_href": "a",
-            "css_image": "img",
             "full_list": {
               "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&filter%5Btype%5D=picked&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
-              "css_list": "data",
-              "css_title": ["name","author.name","chapter_count","synopsis"],
-              "css_href": "slug",
-              "css_id": "id",
+              "ret_type": "json",
+              "list": "data",
+              "title": [
+                "name",
+                "author.name",
+                "chapter_count",
+                "synopsis"
+              ],
+              "href": "slug",
+              "id": "id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "poster.150"
+              "image": "poster.150"
             }
           },
           {
             "id": "6",
             "title": "Mới hoàn thành",
             "direction": "vertical",
-            "css_list_old": "#completed div.flex",
-            "css_title": "span",
-            "css_href": "a",
-            "css_image": "img",
             "full_list": {
               "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&filter%5Bstatus%5D=2&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
-              "css_list": "data",
-              "css_title": ["name","author.name","chapter_count","synopsis"],
-              "css_href": "slug",
-              "css_id": "id",
+              "ret_type": "json",
+              "list": "data",
+              "title": [
+                "name",
+                "author.name",
+                "chapter_count",
+                "synopsis"
+              ],
+              "href": "slug",
+              "id": "id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
-              "css_image": "poster.150"
+              "image": "poster.150"
             }
           }
         ]
       },
-      "book_old": {
-        "url": "{href}",
-        "css_book_image": "main img",
-        "css_detail": "main .mb-6",
-        "css_summary": "#synopsis .text-base",
-        "css_book_id": "button.text-title",
-        "css_book_id_att": "data-x-data",       
-        "css_book_id_cut_pattern": "(^.*?\\(|\\, null\\).*?$)",
-        "css_chapters_href": "main .mb-3>a",
-        "chapters_href_replace": "https://backend.metruyencv.com/api/chapters?filter%5Bbook_id%5D={book_id}&filter%5Btype%5D=published",        
-        "css_list": "data",
-        "css_title": "name",
-        "css_href": "index",
-        "css_chapter_id": "id"
-      },
-      "chapter_old": {
-        "url": "{book_href}/chuong-{href}",
-        "css_href": "",
-        "css_title": "main h2",
-        "css_content": "#chapter-detail",
-        "tran_content": "{title} \n\n{content}",
-  
-        "css_prev": "body>script:nth-of-type(2)",
-        "css_next": "body>script:nth-of-type(2)",
-        "css_prev_next_cut_pattern": "(^.*?chapter: |\\, book:.*?$)"
-        ,"json_next_href":"next.index"
-        ,"json_prev_href":"previous.index"
-        ,"tran_next_href": "{next_href}"
-        ,"tran_prev_href": "{prev_href}"
-      },
       "book": {
         "url": "{href}",
-        "css_book_image": "main img",
-        "css_detail": "main .mb-6",
-        "css_summary": "#synopsis .text-base",
-        "css_book_id": "button.text-title",
-        "css_book_id_att": "data-x-data",       
-        "css_book_id_cut_pattern": "(^.*?\\(|\\, null\\).*?$)",
-        "css_chapters_href": "main .mb-3>a",
-        "chapters_href_replace": "https://backend.metruyencv.com/api/chapters?filter%5Bbook_id%5D={book_id}&filter%5Btype%5D=published",        
-        "css_list": "data",
-        "css_title": "name",
-        "css_href": "id",
-        "css_chapter_id": "id"
+        "ret_type": "html",
+        "book_image": "main img",
+        "detail": "main .mb-6",
+        "summary": "#synopsis .text-base",
+        "book_id": "button.text-title",
+        "book_id_att": "data-x-data",
+        "book_id_cut_pattern": "(^.*?\\(|\\, null\\).*?$)",
+        "chapters": {
+          "href": "main .mb-3>a",
+          "href_replace": "https://backend.metruyencv.com/api/chapters?filter%5Bbook_id%5D={book_id}&filter%5Btype%5D=published",
+          "ret_type": "json",
+          "list": "data",
+          "chapter_title": "name",
+          "chapter_href": "id",
+          "chapter_id": "id"
+        }
       },
       "chapter": {
         "url": "https://backend.metruyencv.com/api/chapters/{href}?hash={hash}",
-        "output_json":true,
-        "css_href": "data.id",
-        "css_id": "data.id",
-        "css_title": "data.name",
-        "css_content": "data.content",
-        "content_decrypt":true,
+        "ret_type": "json",
+        "href": "data.id",
+        "id": "data.id",
+        "title": "data.name",
+        "content": "data.content",
+        "content_decrypt": true,
         "tran_content": "{title} \n\n{content}",
-  
-        "css_prev": "data.previous.id",
-        "css_next": "data.next.id"
+        "next_prev": {
+          "ret_type": "json",
+          "prev": "data.previous.id",
+          "next": "data.next.id"
+        }
       }
-    }  
-  ]  
+    }
+  ]
 }
