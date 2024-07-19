@@ -1,9 +1,13 @@
 {
-  "version": "-",
-  "gemini": [
+  "version": "*",
+  "editor": [
     {
       "model_name": "gpt-4o-mini",
+      "temperature": 1,
       "max_output_tokens": 8192,
+      "top_p": 1,
+      "frequency_penalty": 0,
+      "presence_penalty": 0,
       "max_input_length": 20000,
       "prompt": "Bạn là một biên tập viên giỏi trong lĩnh vực truyện chưởng. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa: {query}",
       "replacement":["#","","*",""]
