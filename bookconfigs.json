@@ -1,5 +1,5 @@
 {
-  "version": ".",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -574,7 +574,7 @@
         "next_prev": {
           "next": "#linkNext",
           "prev": "#linkPrev",
-          "href_pattern":".*?\.html"
+          "href_pattern":".*?\\.html"
         }
       }
     }
