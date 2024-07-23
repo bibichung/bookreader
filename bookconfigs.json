@@ -466,7 +466,8 @@
               "title": "",
               "href": ".bookname",
               "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
             }
           },
           {
@@ -479,7 +480,8 @@
               "title": "",
               "href": ".bookname",
               "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
             }
           },
           {
@@ -492,7 +494,8 @@
               "title": "",
               "href": ".bookname",
               "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
             }
           },
           {
@@ -505,7 +508,8 @@
               "title": "",
               "href": ".bookname",
               "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
             }
           },
           {
@@ -518,7 +522,8 @@
               "title": "",
               "href": ".bookname",
               "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
             }
           },
           {
@@ -531,7 +536,8 @@
               "title": "",
               "href": ".bookname",
               "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
             }
           },
           {
@@ -544,7 +550,8 @@
               "title": "",
               "href": ".bookname",
               "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
             }
           }
         ]
@@ -558,10 +565,12 @@
         "book_id": ".btn-info",
         "book_id_att": "onclick",
         "book_id_cut_pattern": "(^.*?\\(|\\).*?$)",
+        "convert_chinese":true,
         "chapters": {
           "list": "#list-chapterAll dd",
           "chapter_title": "",
-          "chapter_href": ""
+          "chapter_href": "",
+          "convert_chinese":true
         }
       },
       "chapter": {
@@ -571,6 +580,7 @@
         "title": ".pt10",
         "content": ".readcotent",
         "tran_content": "{title}\n\n{content}",
+        "convert_chinese":true,
         "next_prev": {
           "next": "#linkNext",
           "prev": "#linkPrev",
