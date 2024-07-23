@@ -573,7 +573,8 @@
         "tran_content": "{title}\n\n{content}",
         "next_prev": {
           "next": "#linkNext",
-          "prev": "#linkPrev"
+          "prev": "#linkPrev",
+          "href_pattern":".*?\.html"
         }
       }
     }
