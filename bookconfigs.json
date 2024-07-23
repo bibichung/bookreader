@@ -432,6 +432,157 @@
           "next": "data.next.id"
         }
       }
+    },
+    {
+      "name": "UUKanshu",
+      "id": "3",
+      "timeout": "60000",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+      },
+      "home": {
+        "url": "https://uukanshu.cc/",
+        "search": {
+          "url": "https://backend.metruyencv.com/api/books/search?gender=1&keyword={query}&kind=1&page=1",
+          "ret_type": "json",
+          "list": "data",
+          "href": "slug",
+          "tran_href": "https://metruyencv.info/truyen/{href}",
+          "id": "id",
+          "title": [
+            "name",
+            "author.name",
+            "chapter_count"
+          ]
+        },
+        "topics": [
+          {
+            "id": "1",
+            "title": "Tổng lượt xem ",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/allvisit_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+            }
+          },
+          {
+            "id": "2",
+            "title": "Tổng bình chọn",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/allvote_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+            }
+          },
+          {
+            "id": "3",
+            "title": "Xếp hạng tháng",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/monthvisit_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+            }
+          },
+          {
+            "id": "4",
+            "title": "Đề xuất tháng",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/monthvote_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+            }
+          },
+          {
+            "id": "7",
+            "title": "Mới bổ sung",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/postdate_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+            }
+          },
+          {
+            "id": "8",
+            "title": "Mới cập nhật",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/lastupdate_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+            }
+          },
+          {
+            "id": "9",
+            "title": "Bộ sưu tập",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/goodnum_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg"
+            }
+          }
+        ]
+      },
+      "book": {
+        "url": "{href}",
+        "ret_type": "html",
+        "book_image": "main img",
+        "detail": "main .mb-6",
+        "summary": "#synopsis .text-base",
+        "book_id": "button.text-title",
+        "book_id_att": "data-x-data",
+        "book_id_cut_pattern": "(^.*?\\(|\\, null\\).*?$)",
+        "chapters": {
+          "href": "main .mb-3>a",
+          "href_replace": "https://backend.metruyencv.com/api/chapters?filter%5Bbook_id%5D={book_id}&filter%5Btype%5D=published",
+          "ret_type": "json",
+          "list": "data",
+          "chapter_title": "name",
+          "chapter_href": "id",
+          "chapter_id": "id"
+        }
+      },
+      "chapter": {
+        "url": "https://backend.metruyencv.com/api/chapters/{href}?hash={hash}",
+        "ret_type": "json",
+        "href": "data.id",
+        "id": "data.id",
+        "title": "data.name",
+        "content": "data.content",
+        "content_decrypt": true,
+        "tran_content": "{title} \n\n{content}",
+        "next_prev": {
+          "ret_type": "json",
+          "prev": "data.previous.id",
+          "next": "data.next.id"
+        }
+      }
     }
   ]
 }
