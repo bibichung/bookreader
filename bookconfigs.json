@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": ".",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -552,35 +552,28 @@
       "book": {
         "url": "{href}",
         "ret_type": "html",
-        "book_image": "main img",
-        "detail": "main .mb-6",
-        "summary": "#synopsis .text-base",
-        "book_id": "button.text-title",
-        "book_id_att": "data-x-data",
-        "book_id_cut_pattern": "(^.*?\\(|\\, null\\).*?$)",
+        "book_image": ".thumbnail",
+        "detail": ".booktitle",
+        "summary": ".bookinfo",
+        "book_id": ".btn-info",
+        "book_id_att": "onclick",
+        "book_id_cut_pattern": "(^.*?\\(|\\).*?$)",
         "chapters": {
-          "href": "main .mb-3>a",
-          "href_replace": "https://backend.metruyencv.com/api/chapters?filter%5Bbook_id%5D={book_id}&filter%5Btype%5D=published",
-          "ret_type": "json",
-          "list": "data",
-          "chapter_title": "name",
-          "chapter_href": "id",
-          "chapter_id": "id"
+          "list": "#list-chapterAll dd",
+          "chapter_title": "",
+          "chapter_href": ""
         }
       },
       "chapter": {
-        "url": "https://backend.metruyencv.com/api/chapters/{href}?hash={hash}",
-        "ret_type": "json",
-        "href": "data.id",
-        "id": "data.id",
-        "title": "data.name",
-        "content": "data.content",
-        "content_decrypt": true,
-        "tran_content": "{title} \n\n{content}",
+        "url": "https://uukanshu.cc{href}",
+        "ret_type": "html",
+        "href": "",
+        "title": ".pt10",
+        "content": ".readcotent",
+        "tran_content": "{title}\n\n{content}",
         "next_prev": {
-          "ret_type": "json",
-          "prev": "data.previous.id",
-          "next": "data.next.id"
+          "next": "#linkNext",
+          "prev": "#linkPrev"
         }
       }
     }
