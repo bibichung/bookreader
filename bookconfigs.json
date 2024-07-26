@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": "-",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -581,6 +581,7 @@
         "content": ".readcotent",
         "tran_content": "{title}\n\n{content}",
         "convert_chinese":true,
+        "retry_editor_index":[2, 1],
         "next_prev": {
           "next": "#linkNext",
           "prev": "#linkPrev",
