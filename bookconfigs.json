@@ -1,5 +1,5 @@
 {
-  "version": "-",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -457,6 +457,174 @@
         },
         "topics": [
           {
+            "id": "8",
+            "title": "Mới cập nhật",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/lastupdate_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "10",
+            "title": "Huyền huyễn kỳ huyễn",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_1_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "11",
+            "title": "Võ hiệp tiên hiệp",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_2_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "12",
+            "title": "Hiện đại đô thị",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_3_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "13",
+            "title": "Lịch sử quân sự",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_4_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "14",
+            "title": "Khoa huyễn tiểu thuyết",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_5_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "15",
+            "title": "Du hí cạnh kỹ",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_6_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "16",
+            "title": "Kinh khủng linh dị",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_7_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "17",
+            "title": "Ngôn tình tiểu thuyết",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_8_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "18",
+            "title": "Anime đồng nhân",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_9_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "19",
+            "title": "Loại khác",
+            "full_list": {
+              "url": "https://uukanshu.cc/class_10_{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "20",
+            "title": "Đã hoàn thành",
+            "full_list": {
+              "url": "https://uukanshu.cc/quanben/{page}.html",
+              "ret_type": "html",
+              "list": ".bookinfo",
+              "title": "",
+              "href": ".bookname",
+              "image": "",
+              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
             "id": "1",
             "title": "Tổng lượt xem ",
             "full_list": {
@@ -517,20 +685,6 @@
             "title": "Mới bổ sung",
             "full_list": {
               "url": "https://uukanshu.cc/top/postdate_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
-            }
-          },
-          {
-            "id": "8",
-            "title": "Mới cập nhật",
-            "full_list": {
-              "url": "https://uukanshu.cc/top/lastupdate_{page}.html",
               "ret_type": "html",
               "list": ".bookinfo",
               "title": "",
