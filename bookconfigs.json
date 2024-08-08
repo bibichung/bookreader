@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": ".",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -917,7 +917,7 @@
         "summary": "#centerm tr:nth-child(-3n+4)",
         "book_id": "caption a",
         "book_id_att": "href",
-        "book_id_cut_pattern": "(^https://www.piaotia.com/html/|/index.html${'$'})",
+        "book_id_cut_pattern": "(^https://www.piaotia.com/html/|/index.html$)",
         "convert_chinese":true,
         "chapters": {
           "href": "#centerm tr:nth-child(7) a",
