@@ -742,6 +742,207 @@
           "href_pattern":".*?\\.html"
         }
       }
-    }
+    },
+    {
+      "name": "PiaoTian",
+      "id": "4",
+      "timeout": "60000",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+      },
+      "home": {
+        "url": "https://www.piaotia.com/",
+        "search": {
+          "url": "https://backend.metruyencv.com/api/books/search?gender=1&keyword={query}&kind=1&page=1",
+          "ret_type": "json",
+          "list": "data",
+          "href": "slug",
+          "tran_href": "https://metruyencv.info/truyen/{href}",
+          "id": "id",
+          "title": [
+            "name",
+            "author.name",
+            "chapter_count"
+          ]
+        },
+        "topics": [
+          {
+            "id": "1",
+            "title": "Tiểu thuyết VIP mới nhất",
+            "full_list": {
+              "url": "https://www.piaotia.com/booktoppostdate/0/{page}.html ",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "2",
+            "title": "Huyền huyễn ma pháp",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort1/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "3",
+            "title": "Võ hiệp tu chân",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort2/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "4",
+            "title": "Đô thị ngôn tình",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort3/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "5",
+            "title": "Lịch sử quân sự",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort4/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "6",
+            "title": "Võng du thi đấu",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort5/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "7",
+            "title": "Tiểu thuyết khoa huyễn",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort6/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "8",
+            "title": "Kinh khủng linh dị",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort7/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "9",
+            "title": "Đồng nhân manga",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort8/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "10",
+            "title": "Cái loại hình khác",
+            "full_list": {
+              "url": "https://www.piaotia.com/booksort9/0/{page}.html",
+              "ret_type": "html",
+              "list": "tr:not(:first-child)",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
+              "convert_chinese":true
+            }
+          }
+
+        ]
+      },
+      "book": {
+        "url": "{href}",
+        "ret_type": "html",
+        "book_image": ".thumbnail",
+        "detail": "#centerm tr[align=\"center\"]",
+        "summary": "#centerm tr:nth-child(-3n+4)",
+        "book_id": "caption a",
+        "book_id_att": "href",
+        "book_id_cut_pattern": "(^https://www.piaotia.com/html/|/index.html${'$'})",
+        "convert_chinese":true,
+        "chapters": {
+          "href": "#centerm tr:nth-child(7) a",
+          "ret_type": "html",
+          "list": "li a",
+          "chapter_title": "",
+          "chapter_href": "",
+          "convert_chinese":true
+        }
+      },
+      "chapter": {
+        "url": "https://www.piaotia.com/html/{book_id}/{href}",
+        "ret_type": "html",
+        "href": "",
+        "title": "h1",
+        "content": "",
+        "tran_content": "{title}\n\n{content}",
+        "convert_chinese":true,
+        "retry_editor_index":[2, 1],
+        "next_prev": {
+          "next": ".toplink a:nth-child(3)",
+          "prev": ".toplink a",
+          "href_pattern":".*?[0-9]\\.html"
+        }
+      }
+    }    
   ]
 }
