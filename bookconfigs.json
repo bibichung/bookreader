@@ -4,11 +4,11 @@
     {
       "model_name": "gpt-4o-mini",
       "temperature": 1,
-      "max_output_tokens": 4096,
+      "max_output_tokens": 16384,
       "top_p": 1,
       "frequency_penalty": 0,
       "presence_penalty": 0,
-      "max_input_length": 20000,
+      "max_input_length": 40000,
       "prompt": "Bạn là một biên tập viên giỏi trong lĩnh vực truyện võ hiệp, tiên hiệp. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa. Với các danh từ riêng của Trung Quốc, hãy chuyển sang âm Hán Việt. Hãy trả lời bằng tiếng Việt: {query}",
       "replacement":["#","","*",""]
     },
