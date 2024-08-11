@@ -18,7 +18,7 @@
       "top_k": 64,
       "top_p": 0.95,
       "max_output_tokens": 8192,
-      "max_input_length": 20000,
+      "max_input_length": 40000,
       "prompt": "Bạn là một biên tập viên giỏi trong lĩnh vực truyện võ hiệp, tiên hiệp. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa. Hãy trả lời bằng tiếng Việt: {query}",
       "replacement":["#","","*",""]
     },
