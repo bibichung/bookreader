@@ -1,5 +1,5 @@
 {
-  "version": "-",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -914,7 +914,7 @@
         "ret_type": "html",
         "book_image": ".thumbnail",
         "detail": "#centerm tr[align=\"center\"]",
-        "summary": "#centerm table",
+        "summary": "#centerm table[width=\"100%\"]:first-child, #centerm table:nth-child(3) td[width=\"80%\"]",
         "book_id": "caption a",
         "book_id_att": "href",
         "book_id_cut_pattern": "(^https://www.piaotia.com/html/|/index.html$)",
