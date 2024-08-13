@@ -943,6 +943,193 @@
           "href_pattern":".*?[0-9]\\.html"
         }
       }
-    }    
+    },
+    {
+      "name": "69shuba",
+      "id": "5",
+      "timeout": "60000",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
+      },
+      "home": {
+        "url": "https://69shuba.cx/index.html",
+        "search": {
+          "url": "https://backend.metruyencv.com/api/books/search?gender=1&keyword={query}&kind=1&page=1",
+          "ret_type": "json",
+          "list": "data",
+          "href": "slug",
+          "tran_href": "https://metruyencv.info/truyen/{href}",
+          "id": "id",
+          "title": [
+            "name",
+            "author.name",
+            "chapter_count"
+          ]
+        },
+        "topics": [
+          {
+            "id": "01",
+            "title": "Ngôn tình tiểu thuyết",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/3/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "02",
+            "title": "Huyền huyễn ma pháp",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/1/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "03",
+            "title": "Tu chân vũ hiệp",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/2/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "05",
+            "title": "Đô thị tiểu thuyết",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/9/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "06",
+            "title": "Lịch sử quân sự",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/4/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "07",
+            "title": "Du hí cạnh kỹ",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/5/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "08",
+            "title": "Khoa huyễn không gian",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/6/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "09",
+            "title": "Kinh dị tiểu thuyết",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/7/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "10",
+            "title": "Đồng nhân tiểu thuyết",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/8/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "11",
+            "title": "Quan trường",
+            "full_list": {
+              "url": "https://69shuba.cx/blist/class/10/{page}.htm",
+              "ret_type": "html",
+              "list": ".newnav",
+              "title": "",
+              "href": "a",
+              "image": "",
+              "convert_chinese":true
+            }
+          }
+        ]
+      },
+      "book": {
+        "url": "{href}",
+        "ret_type": "html",
+        "book_image": ".bookimg2",
+        "detail": ".booknav2 a",
+        "summary": ".booknav2 p, #jianjie-popup",
+        "book_id": ".addbtn a",
+        "convert_chinese":true,
+        "chapters": {
+          "href": ".addbtn a",
+          "ret_type": "html",
+          "list": "#catalog li",
+          "chapter_title": "",
+          "chapter_href": "",
+          "convert_chinese":true
+        }
+      },
+      "chapter": {
+        "url": "{href}",
+        "ret_type": "html",
+        "href": "",
+        "title": "h1",
+        "content": ".txtnav",
+        "convert_chinese":true,
+        "retry_editor_index":[2, 1],
+        "next_prev": {
+          "next": ".page1 a:nth-child(4)",
+          "prev": ".page1 a",
+          "href_pattern":"https://69shuba.cx/txt/.*?"
+        }
+      }
+    }
   ]
 }
