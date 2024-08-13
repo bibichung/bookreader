@@ -1,9 +1,9 @@
 {
-  "version": ".",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
-      "temperature": 1,
+      "temperature": 0,
       "max_output_tokens": 16384,
       "top_p": 1,
       "frequency_penalty": 0,
@@ -14,7 +14,7 @@
     },
     {
       "model_name": "gemini-1.5-pro",
-      "temperature": 1,
+      "temperature": 0,
       "top_k": 64,
       "top_p": 0.95,
       "max_output_tokens": 8192,
@@ -24,11 +24,11 @@
     },
     {
       "model_name": "gemini-1.5-flash",
-      "temperature": 1,
+      "temperature": 0,
       "top_k": 64,
       "top_p": 0.95,
       "max_output_tokens": 8192,
-      "max_input_length": 20000,
+      "max_input_length": 40000,
       "prompt": "Bạn là một biên tập viên giỏi trong lĩnh vực truyện võ hiệp, tiên hiệp. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa. Hãy trả lời bằng tiếng Việt: {query}",
       "prompt1": "Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu, giữ nguyên các chữ 'ngươi', 'hắn', 'ta': {query}",
       "prompt2": "Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}",
