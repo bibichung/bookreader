@@ -1129,7 +1129,7 @@
         "next_prev": {
           "next": ".page1 a:nth-child(4)",
           "prev": ".page1 a",
-          "href_pattern":"https://69shuba.cx/txt/.*?"
+          "href_pattern":"http.*?/txt/.*?"
         }
       }
     }
