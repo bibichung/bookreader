@@ -429,7 +429,7 @@
         "content_decrypt1": true,
         "tran_content": "{title} \n\n{content}",
         "next_prev": {
-          "regex": "window\\.chapterData\\s*=\\s*\\{.*chapter:\\s(\\{\\}),.*book:",
+          "regex": "chapter:\\s(\\{.*\\}),.*book:",
           "ret_type": "json",
           "prev": "previous.index",
           "next": "next.index"
