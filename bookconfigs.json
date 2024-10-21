@@ -1,5 +1,5 @@
 {
-  "version": "-",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -414,23 +414,25 @@
           "ret_type": "json",
           "list": "data",
           "chapter_title": "name",
-          "chapter_href": "id",
+          "chapter_href": "index",
           "chapter_id": "id"
         }
       },
       "chapter": {
-        "url": "https://backend.metruyencv.com/api/chapters/{href}?hash={hash}",
-        "ret_type": "json",
+        "url1": "https://backend.metruyencv.com/api/chapters/{href}?hash={hash}",
+        "url": "{book_href}/chuong-{href}",
+        "ret_type": "html",
         "href": "data.id",
         "id": "data.id",
-        "title": "data.name",
-        "content": "data.content",
-        "content_decrypt": true,
+        "title": "h2.text-balance",
+        "content": "#chapter-detail div",
+        "content_decrypt1": true,
         "tran_content": "{title} \n\n{content}",
         "next_prev": {
+          "regex": "window\\.chapterData\\s*=\\s*(\\{.*\\});",
           "ret_type": "json",
-          "prev": "data.previous.id",
-          "next": "data.next.id"
+          "prev": "chapter.previous.index",
+          "next": "chapter.next.index"
         }
       }
     },
