@@ -14,7 +14,7 @@
       "replacement":["#","","*",""]
     },
     {
-      "model_name": "gemini-1.5-pro-002",
+      "model_name": "gemini-1.5-flash",
       "temperature": 0.5,
       "top_k": 8,
       "top_p": 0.95,
