@@ -22,6 +22,7 @@
       "max_input_length": 15000,
       "max_translate_length":1000,
       "prompt": "Hãy biên tập chương truyện võ hiệp, tiêp hiệp sau và chỉ trả lại nội dung sau khi biên tập. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện,vui lòng chuyển sang phiên âm Hán Việt. Biên tập sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Hãy trả lời bằng tiếng Việt. Sau đây là nội dung chương truyện: {query}",
+      "prompt_translate": "Hãy dịch chương truyện võ hiệp, tiêp hiệp sau từ tiếng Trung sang tiếng Việt và chỉ trả lại nội dung sau khi dịch. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện,vui lòng chuyển sang phiên âm Hán Việt. Dịch sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Sau đây là nội dung chương truyện: {query}",
       "replacement":["#","","*",""]
     },
     {
