@@ -1,5 +1,5 @@
 {
-  "version": ".",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -1126,7 +1126,7 @@
         "url": "{href}",
         "ret_type": "html",
         "book_image": ".bookimg2",
-        "tran_image": "https://69shuba.cx/{image}",
+        "tran_image": "https://69shuba.cx{image}",
         "detail": ".booknav2 a",
         "summary": ".booknav2 p, #jianjie-popup",
         "book_id": ".addbtn a",
