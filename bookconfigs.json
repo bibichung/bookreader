@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": ".",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -9,8 +9,10 @@
       "frequency_penalty": 0,
       "presence_penalty": 0,
       "max_input_length": 30000,
+      "max_translate_length":6000,
       "prompt": "Hãy biên tập chương truyện võ hiệp, tiêp hiệp sau và chỉ trả lại nội dung sau khi biên tập. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện,vui lòng chuyển sang phiên âm Hán Việt. Biên tập sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Hãy trả lời bằng tiếng Việt. Sau đây là nội dung chương truyện: {query}",
       "prompt2": "Bạn là một biên tập viên giỏi trong lĩnh vực truyện võ hiệp, tiên hiệp. Hãy biên tập từng câu của chương truyện sau và chỉ trả lại nội dung sau khi sửa. Với các danh từ riêng của Trung Quốc, hãy chuyển sang âm Hán Việt. Hãy trả lời bằng tiếng Việt: {query}",
+      "prompt_translate": "chương truyện:\n{query}\nHãy dịch chương truyện võ hiệp, tiên hiệp trên sang tiếng Việt và chỉ trả lại kết quả dịch. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện, vui lòng chuyển sang phiên âm Hán Việt.",
       "replacement":["#","","*",""]
     },
     {
@@ -1124,6 +1126,7 @@
         "url": "{href}",
         "ret_type": "html",
         "book_image": ".bookimg2",
+        "tran_image": "https://69shuba.cx/{image}",
         "detail": ".booknav2 a",
         "summary": ".booknav2 p, #jianjie-popup",
         "book_id": ".addbtn a",
