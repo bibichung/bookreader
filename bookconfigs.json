@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": ".",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -958,7 +958,8 @@
       "timeout": "60000",
       "headers": {
         "Cookie": "cf_chl_rc_m=1; cf_clearance=aGIRBZeTtTxn.mZb01zD36WuorMqts02dc4.znar3XE-1726885867-1.2.1.1-icta67bUr.K_W_HChP1TJx6rGTr6yCUrKWm7HqEVhFVSzFuyJJzvbzvyQC5nr.ytRd7gUhdTi9RQI_v9eGwzPdiu8_GL6tHV32_y_tnIgDIdkfelQCoc440Zs0uxxJf70Tp32daLBkue8cQdqRyPTWEvJ0t2F8B67K8ZPd9eSoauiYjq9KotYFB_GnetvFIKDEQLIyAb280gM_PG9znd_XC8QtibfHBgKJFp2xnHRECOX2wzMJ_BfQwQpERtDV2_bcnvn3mLnzBym0eOBtKSXYtDVuzvvVzVVHuCQF09vJg7yu0L.H2TjFNCWUGFBCIQElCKrn8FEC7oMpmimQMWtP_mwwSHTZg_CWEn8Ecm6VVE9lTeHOkMG.vw7jiZVYo0F_1lKNzKTigKF_twEu7QdQ8rylYGtoU_70a_o3mWkHerw4ycThznUYWtQ2cWi6Bu; zh_choose=s",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"        
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Cache-Control":"no-cache"
       },
       "charset_repl":{"text":["<meta charset=\"gbk\">"], "charset":"gbk"},
       "home": {
