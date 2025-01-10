@@ -1,5 +1,5 @@
 {
-  "version": ".",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -28,15 +28,14 @@
       "replacement":["#","","*",""]
     },
     {
-      "model_name": "gemini-1.5-pro",
+      "model_name": "gemini-2.0-flash-exp",
       "temperature": 0.5,
       "top_k": 8,
       "top_p": 0.95,
       "max_output_tokens": 8192,
       "max_input_length": 20000,
       "prompt": "Hãy biên tập chương truyện võ hiệp, tiêp hiệp sau và chỉ trả lại nội dung sau khi biên tập. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện,vui lòng chuyển sang phiên âm Hán Việt. Biên tập sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Hãy trả lời bằng tiếng Việt. Sau đây là nội dung chương truyện: {query}",
-      "prompt1": "Viết lại cho dễ đọc, phong cách truyện chưởng, không sửa câu đầu, giữ nguyên các chữ 'ngươi', 'hắn', 'ta': {query}",
-      "prompt2": "Tóm tắt theo phong cách truyện chưởng đoạn văn: {query}",
+      "prompt_translate": "chương truyện:\n{query}\nHãy dịch chương truyện võ hiệp, tiên hiệp trên sang tiếng Việt và chỉ trả lại kết quả dịch. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện, vui lòng chuyển sang phiên âm Hán Việt.",
       "replacement":["#","","*",""]
     }
   ],
@@ -742,7 +741,7 @@
         "content": ".readcotent",
         "tran_content": "{title}\n\n{content}",
         "convert_chinese":true,
-        "retry_editor_index":[2, 1],
+        "retry_editor_index":[3, 2, 1],
         "next_prev": {
           "next": "#linkNext",
           "prev": "#linkPrev",
@@ -944,7 +943,7 @@
         "content": "",
         "tran_content": "{title}\n\n{content}",
         "convert_chinese":true,
-        "retry_editor_index":[2, 1],
+        "retry_editor_index":[3, 2, 1],
         "next_prev": {
           "next": ".toplink a:nth-child(3)",
           "prev": ".toplink a",
@@ -1148,7 +1147,7 @@
         "title": "h1",
         "content": ".txtnav",
         "convert_chinese":true,
-        "retry_editor_index":[2, 1],
+        "retry_editor_index":[3, 2, 1],
         "next_prev": {
           "next": ".page1 a:nth-child(4)",
           "prev": ".page1 a",
