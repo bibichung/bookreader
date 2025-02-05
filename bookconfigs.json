@@ -1,5 +1,5 @@
 {
-  "version": "-",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -34,8 +34,8 @@
       "top_p": 0.95,
       "max_output_tokens": 8192,
       "max_input_length": 20000,
-      "prompt": "Hãy biên tập chương truyện võ hiệp, tiêp hiệp sau và chỉ trả lại nội dung sau khi biên tập. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện,vui lòng chuyển sang phiên âm Hán Việt. Biên tập sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Hãy trả lời bằng tiếng Việt. Sau đây là nội dung chương truyện: {query}",
-      "prompt_translate": "chương truyện:\n{query}\nHãy dịch chương truyện võ hiệp, tiên hiệp trên sang tiếng Việt và chỉ trả lại kết quả dịch. Với các thuật ngữ tu luyện, vui lòng chuyển sang phiên âm Hán Việt.",
+      "prompt": "Hãy biên tập chương truyện võ hiệp, tiêp hiệp sau và chỉ trả lại nội dung sau khi biên tập. Biên tập sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Hãy trả lời bằng tiếng Việt. Sau đây là nội dung chương truyện: {query}",
+      "prompt_translate": "chương truyện:\n{query}\nHãy dịch chương truyện võ hiệp, tiên hiệp trên sang tiếng Việt và chỉ trả lại kết quả dịch.",
       "replacement":["#","","*",""]
     }
   ],
