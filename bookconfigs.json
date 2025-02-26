@@ -1,5 +1,5 @@
 {
-  "version": "-",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -28,7 +28,7 @@
       "replacement":["#","","*",""]
     },
     {
-      "model_name": "gemini-2.0-flash-lite-preview-02-05",
+      "model_name": "gemini-2.0-flash-lite",
       "temperature": 1,
       "top_k": 8,
       "top_p": 0.95,
