@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": "-",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -992,20 +992,21 @@
         "topics": [
           {
             "id": "00",
-            "title": "Mới cập nhật",
+            "title": "Các thể loại",
             "full_list": {
-              "url": "https://69shuba.cx/blist/newhot_0_0_{page}.htm",
+              "url": "https://69shuba.cx/blist/class/0/{page}.htm",
               "ret_type": "html",
               "list": ".newnav",
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
           {
             "id": "01",
-            "title": "Ngôn tình tiểu thuyết",
+            "title": "Xem nhiều",
             "full_list": {
               "url": "https://69shuba.cx/blist/class/3/{page}.htm",
               "ret_type": "html",
@@ -1013,6 +1014,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1026,6 +1028,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1039,6 +1042,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1052,6 +1056,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1065,6 +1070,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1078,6 +1084,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1091,6 +1098,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1104,6 +1112,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1117,6 +1126,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           },
@@ -1130,6 +1140,7 @@
               "title": "",
               "href": "a",
               "image": "",
+              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
             }
           }
@@ -1139,9 +1150,10 @@
         "url": "{href}",
         "ret_type": "html",
         "book_image": ".bookimg2",
-        "tran_image": "https://69shuba.cx{image}",
+        "tran_image_": "https://69shuba.cx{image}",
         "detail": ".booknav2 a",
-        "summary": ".booknav2 p, #jianjie-popup",
+        "summary_": ".booknav2 p, #jianjie-popup",
+        "summary": ".navtxt",
         "book_id": ".addbtn a",
         "convert_chinese":true,
         "chapters": {
