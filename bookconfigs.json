@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": "-",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -726,7 +726,7 @@
         "book_image": ".thumbnail",
         "detail": ".booktitle",
         "summary": ".bookinfo",
-        "category": ".breadcrumb a:nth-child(2)",
+        "category": ".breadcrumb li:nth-child(2) a",
         "book_id": ".btn-info",
         "book_id_att": "onclick",
         "book_id_cut_pattern": "(^.*?\\(|\\).*?$)",
@@ -1147,7 +1147,7 @@
         "detail": ".booknav2 a",
         "summary_": ".booknav2 p, #jianjie-popup",
         "summary": ".navtxt",
-        "category": ".booknav2 a:nth-child(3)",
+        "category": ".booknav2 :nth-child(3) a",
         "book_id": ".addbtn a",
         "convert_chinese":true,
         "chapters": {
