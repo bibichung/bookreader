@@ -1,5 +1,5 @@
 {
-  "version": "-",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -726,6 +726,7 @@
         "book_image": ".thumbnail",
         "detail": ".booktitle",
         "summary": ".bookinfo",
+        "category": ".breadcrumb a:nth-child(2)",
         "book_id": ".btn-info",
         "book_id_att": "onclick",
         "book_id_cut_pattern": "(^.*?\\(|\\).*?$)",
@@ -926,6 +927,7 @@
         "book_image": ".thumbnail",
         "detail": "#centerm tr[align=\"center\"]",
         "summary": "#centerm>div>table>tbody>tr:nth-child(1), #centerm>div>table>tbody>tr:nth-child(4) td[width=\"80%\"]",
+        "category": "#centerm>div>table>tbody>tr:nth-child(1) td[width=\"25%\"]",
         "book_id": "caption a",
         "book_id_att": "href",
         "book_id_cut_pattern": "(^https://www.piaotia.com/html/|/index.html$)",
@@ -1145,6 +1147,7 @@
         "detail": ".booknav2 a",
         "summary_": ".booknav2 p, #jianjie-popup",
         "summary": ".navtxt",
+        "category": ".booknav2 a:nth-child(3)",
         "book_id": ".addbtn a",
         "convert_chinese":true,
         "chapters": {
