@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": "-",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -1171,6 +1171,160 @@
           "next": ".page1 a:nth-child(4)",
           "prev": ".page1 a",
           "href_pattern":"http.*?html|http.*?/txt/.*?"
+        }
+      }
+    },
+        {
+      "name": "ilwxs.com",
+      "id": "6",
+      "timeout": "60000",
+      "headers": {
+        "Cookie": "waf_sc=5889647726; Hm_lvt_eae1bd5c55820d0df4c0e0dd387e0e0d=1748319754; HMACCOUNT=C6B32846600A9D1E; novel_333370=200281881%7C1748319828; Hm_lpvt_eae1bd5c55820d0df4c0e0dd387e0e0d=1748319901",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Cache-Control":"no-cache"
+      },
+      "home": {
+        "url": "https://www.ilwxs.com/",
+        "search": {
+          "url": "https://www.ilwxs.com/search?gender=1&keyword={query}&kind=1&page=1",
+          "ret_type": "json",
+          "list": "data",
+          "href": "slug",
+          "tran_href": "https://m.ilwxs.com/{href}",
+          "id": "id",
+          "title": [
+            "name",
+            "author.name",
+            "chapter_count"
+          ]
+        },
+        "topics": [
+          {
+            "id": "00",
+            "title": "Mới cập nhật",
+            "full_list": {
+              "url": "https://m.ilwxs.com/lastupdate/{page}/",
+              "ret_type": "html",
+              "list": ".list li",
+              "title": "",
+              "href": "a",
+              "image": "img",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "01",
+            "title": "Huyền huyễn ma pháp",
+            "full_list": {
+              "url": "https://m.ilwxs.com/leibie1_{page}.html",
+              "ret_type": "html",
+              "list": ".list li",
+              "title": "",
+              "href": "a",
+              "image": "img",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "02",
+            "title": "Võ hiệp tu chân",
+            "full_list": {
+              "url": "https://m.ilwxs.com/leibie2_{page}.html",
+              "ret_type": "html",
+              "list": ".list li",
+              "title": "",
+              "href": "a",
+              "image": "img",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "04",
+            "title": "Lịch sử quân sự",
+            "full_list": {
+              "url": "https://m.ilwxs.com/leibie4_{page}.html",
+              "ret_type": "html",
+              "list": ".list li",
+              "title": "",
+              "href": "a",
+              "image": "img",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "05",
+            "title": "Thám tử suy luận",
+            "full_list": {
+              "url": "https://m.ilwxs.com/leibie5_{page}.html",
+              "ret_type": "html",
+              "list": ".list li",
+              "title": "",
+              "href": "a",
+              "image": "img",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "06",
+            "title": "Võng du anime",
+            "full_list": {
+              "url": "https://m.ilwxs.com/leibie6_{page}.html",
+              "ret_type": "html",
+              "list": ".list li",
+              "title": "",
+              "href": "a",
+              "image": "img",
+              "convert_chinese":true
+            }
+          },
+          {
+            "id": "03",
+            "title": "Đô thị ngôn tình",
+            "full_list": {
+              "url": "https://m.ilwxs.com/leibie3_{page}.html",
+              "ret_type": "html",
+              "list": ".list li",
+              "title": "",
+              "href": "a",
+              "image": "img",
+              "convert_chinese":true
+            }
+          }
+        ]
+      },
+      "book": {
+        "url": "https://m.ilwxs.com{href}",
+        "ret_type": "html",
+        "book_image": ".detail img",
+        "detail": ".detail a",
+        "summary": ".intro",
+        "category": ".path :nth-child(2) a",
+        "book_id": ".action a",
+        "book_id_att": "href",
+        "book_id_cut_pattern": "(^/shu/|/$)",
+        "convert_chinese":true,
+        "chapters": {
+          "href": ".action a",
+          "href_replace": "https://m.ilwxs.com/shu/{book_id}_{page}/",
+          "ret_type": "html",
+          "list": ".read li",
+          "chapter_title": "a",
+          "chapter_href": "a",
+          "convert_chinese":true
+        }
+      },
+      "chapter": {
+        "url": "https://m.ilwxs.com{href}",
+        "ret_type": "html",
+        "href": "",
+        "title": ".headline",
+        "content": ".content",
+        "convert_chinese":true,
+        "retry_editor_index":[3, 2, 1],
+        "next_prev": {
+          "next": ".pager a:nth-child(3)",
+          "prev": ".pager a",
+          "href_pattern":"/shu/.*?html"
         }
       }
     }
