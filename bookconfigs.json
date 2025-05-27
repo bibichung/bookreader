@@ -1,5 +1,5 @@
 {
-  "version": "-",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -1296,9 +1296,9 @@
         "url": "https://m.ilwxs.com{href}",
         "ret_type": "html",
         "book_image": ".detail img",
-        "detail": ".detail a",
+        "detail": ".detail",
         "summary": ".intro",
-        "category": ".path :nth-child(2) a",
+        "category": ".path a:nth-child(2)",
         "book_id": ".action a",
         "book_id_att": "href",
         "book_id_cut_pattern": "(^/shu/|/$)",
