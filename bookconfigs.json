@@ -1,5 +1,5 @@
 {
-  "version": ".",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -60,6 +60,13 @@
             "status"
           ]
         },
+        "topic_full_list":{
+              "ret_type": "html",
+              "list": ".weui-panel__bd a",
+              "title": "",
+              "href": "",
+              "image": "img"
+        },
         "topics": [
           {
             "id": "1",
@@ -68,12 +75,7 @@
             "full_list": {
               "url": [
                 "https://truyenyy.vip/truyen-moi-cap-nhat/"
-              ],
-              "ret_type": "html",
-              "list": ".weui-panel__bd a",
-              "title": "",
-              "href": "",
-              "image": "img"
+              ]
             }
           },
           {
@@ -83,12 +85,7 @@
             "full_list": {
               "url": [
                 "https://truyenyy.vip/truyen-full/top-tuan/"
-              ],
-              "ret_type": "html",
-              "list": ".weui-panel__bd a",
-              "title": "",
-              "href": "",
-              "image": "img"
+              ]
             }
           },
           {
@@ -98,12 +95,7 @@
             "full_list": {
               "url": [
                 "https://truyenyy.vip/truyen-sang-tac/"
-              ],
-              "ret_type": "html",
-              "list": ".weui-panel__bd a",
-              "title": "",
-              "href": "",
-              "image": "img"
+              ]            
             }
           },
           {
@@ -113,12 +105,7 @@
             "full_list": {
               "url": [
                 "https://truyenyy.vip/yy-collections/"
-              ],
-              "ret_type": "html",
-              "list": ".slider-item",
-              "title": "",
-              "href": "",
-              "image": "img"
+              ]
             }
           }
         ]
@@ -177,18 +164,20 @@
             "number"
           ]
         },
+        "topic_full_list":{
+              "ret_type": "html",
+              "list": ".book-item",
+              "title": ".story-detail",
+              "href": "a",
+              "image": ".story-image img"
+        },
         "topics": [
           {
             "id": "1",
             "title": "Truyện Mới Cập Nhật",
             "direction": "vertical",
             "full_list": {
-              "url": "https://m.truyen.tangthuvien.vn/moi-cap-nhat-loading/1?page={page}",
-              "ret_type": "html",
-              "list": ".book-item",
-              "title": ".story-detail",
-              "href": "a",
-              "image": ".story-image img"
+              "url": "https://m.truyen.tangthuvien.vn/moi-cap-nhat-loading/1?page={page}"
             }
           },
           {
@@ -196,12 +185,7 @@
             "title": "Truyện xem nhiều",
             "direction": "vertical",
             "full_list": {
-              "url": "https://m.truyen.tangthuvien.vn/xem-nhieu-loading?page={page}",
-              "ret_type": "html",
-              "list": ".book-item",
-              "title": ".story-detail",
-              "href": "a",
-              "image": ".story-image img"
+              "url": "https://m.truyen.tangthuvien.vn/xem-nhieu-loading?page={page}"
             }
           },
           {
@@ -209,12 +193,7 @@
             "title": "Truyện đề cử tháng",
             "direction": "vertical",
             "full_list": {
-              "url": "https://m.truyen.tangthuvien.vn/truyen-moi-loading?page={page}",
-              "ret_type": "html",
-              "list": ".book-item",
-              "title": ".story-detail",
-              "href": "a",
-              "image": ".story-image img"
+              "url": "https://m.truyen.tangthuvien.vn/truyen-moi-loading?page={page}"
             }
           },
           {
@@ -222,12 +201,7 @@
             "title": "Truyện đã hoàn thành",
             "direction": "vertical",
             "full_list": {
-              "url": "https://m.truyen.tangthuvien.vn/truyen-hoan-thanh-loading?page={page}",
-              "ret_type": "html",
-              "list": ".book-item",
-              "title": ".story-detail",
-              "href": "a",
-              "image": ".story-image img"
+              "url": "https://m.truyen.tangthuvien.vn/truyen-hoan-thanh-loading?page={page}"
             }
           }
         ]
@@ -283,13 +257,7 @@
             "chapter_count"
           ]
         },
-        "topics": [
-          {
-            "id": "1",
-            "title": "Truyện Mới Cập Nhật",
-            "direction": "vertical",
-            "full_list": {
-              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
+        "topic_full_list":{
               "ret_type": "json",
               "list": "data",
               "title": [
@@ -302,6 +270,14 @@
               "id": "id",
               "tran_href": "https://metruyencv.info/truyen/{href}",
               "image": "poster.150"
+        },
+        "topics": [
+          {
+            "id": "1",
+            "title": "Truyện Mới Cập Nhật",
+            "direction": "vertical",
+            "full_list": {
+              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at"
             }
           },
           {
@@ -309,19 +285,7 @@
             "title": "Bảng xếp hạng - Đọc nhiều",
             "direction": "vertical",
             "full_list": {
-              "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=view&year={year}",
-              "ret_type": "json",
-              "list": "data",
-              "title": [
-                "book.name",
-                "book.author.name",
-                "book.chapter_count",
-                "book.synopsis"
-              ],
-              "href": "book.slug",
-              "id": "book.id",
-              "tran_href": "https://metruyencv.info/truyen/{href}",
-              "image": "book.poster.150"
+              "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=view&year={year}"
             }
           },
           {
@@ -329,19 +293,7 @@
             "title": "Bảng xếp hạng - Đề cử",
             "direction": "vertical",
             "full_list": {
-              "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=vote&year={year}",
-              "ret_type": "json",
-              "list": "data",
-              "title": [
-                "book.name",
-                "book.author.name",
-                "book.chapter_count",
-                "book.synopsis"
-              ],
-              "href": "book.slug",
-              "id": "book.id",
-              "tran_href": "https://metruyencv.info/truyen/{href}",
-              "image": "book.poster.150"
+              "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=vote&year={year}"
             }
           },
           {
@@ -349,19 +301,7 @@
             "title": "Bảng xếp hạng - Tặng quà",
             "direction": "vertical",
             "full_list": {
-              "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=gift&year={year}",
-              "ret_type": "json",
-              "list": "data",
-              "title": [
-                "book.name",
-                "book.author.name",
-                "book.chapter_count",
-                "book.synopsis"
-              ],
-              "href": "book.slug",
-              "id": "book.id",
-              "tran_href": "https://metruyencv.info/truyen/{href}",
-              "image": "book.poster.150"
+              "url": "https://backend.metruyencv.com/api/books/ranking?gender=1&kind=1&limit=20&month={month}&page={page}&type=gift&year={year}"
             }
           },
           {
@@ -369,19 +309,7 @@
             "title": "BTV Đề cử",
             "direction": "vertical",
             "full_list": {
-              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&filter%5Btype%5D=picked&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
-              "ret_type": "json",
-              "list": "data",
-              "title": [
-                "name",
-                "author.name",
-                "chapter_count",
-                "synopsis"
-              ],
-              "href": "slug",
-              "id": "id",
-              "tran_href": "https://metruyencv.info/truyen/{href}",
-              "image": "poster.150"
+              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&filter%5Btype%5D=picked&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at"
             }
           },
           {
@@ -389,19 +317,7 @@
             "title": "Mới hoàn thành",
             "direction": "vertical",
             "full_list": {
-              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&filter%5Bstatus%5D=2&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at",
-              "ret_type": "json",
-              "list": "data",
-              "title": [
-                "name",
-                "author.name",
-                "chapter_count",
-                "synopsis"
-              ],
-              "href": "slug",
-              "id": "id",
-              "tran_href": "https://metruyencv.info/truyen/{href}",
-              "image": "poster.150"
+              "url": "https://backend.metruyencv.com/api/books?filter%5Bgender%5D=1&filter%5Bkind%5D=1&filter%5Bstate%5D=published&filter%5Bstatus%5D=2&include=author%2Cgenres%2Ccreator&limit=20&page={page}&sort=-new_chap_at"
             }
           }
         ]
@@ -465,12 +381,7 @@
             "chapter_count"
           ]
         },
-        "topics": [
-          {
-            "id": "8",
-            "title": "Mới cập nhật",
-            "full_list": {
-              "url": "https://uukanshu.cc/top/lastupdate_{page}.html",
+        "topic_full_list":{
               "ret_type": "html",
               "list": ".bookinfo",
               "title": "",
@@ -478,244 +389,132 @@
               "image": "",
               "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
               "convert_chinese":true
+        },
+        "topics": [
+          {
+            "id": "8",
+            "title": "Mới cập nhật",
+            "full_list": {
+              "url": "https://uukanshu.cc/top/lastupdate_{page}.html"
             }
           },
           {
             "id": "10",
             "title": "Huyền huyễn kỳ huyễn",
             "full_list": {
-              "url": "https://uukanshu.cc/class_1_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_1_{page}.html"
             }
           },
           {
             "id": "11",
             "title": "Võ hiệp tiên hiệp",
             "full_list": {
-              "url": "https://uukanshu.cc/class_2_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_2_{page}.html"
             }
           },
           {
             "id": "12",
             "title": "Hiện đại đô thị",
             "full_list": {
-              "url": "https://uukanshu.cc/class_3_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_3_{page}.html"
             }
           },
           {
             "id": "13",
             "title": "Lịch sử quân sự",
             "full_list": {
-              "url": "https://uukanshu.cc/class_4_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_4_{page}.html"
             }
           },
           {
             "id": "14",
             "title": "Khoa huyễn tiểu thuyết",
             "full_list": {
-              "url": "https://uukanshu.cc/class_5_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_5_{page}.html"
             }
           },
           {
             "id": "15",
             "title": "Du hí cạnh kỹ",
             "full_list": {
-              "url": "https://uukanshu.cc/class_6_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_6_{page}.html"
             }
           },
           {
             "id": "16",
             "title": "Kinh khủng linh dị",
             "full_list": {
-              "url": "https://uukanshu.cc/class_7_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_7_{page}.html"
             }
           },
           {
             "id": "17",
             "title": "Ngôn tình tiểu thuyết",
             "full_list": {
-              "url": "https://uukanshu.cc/class_8_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_8_{page}.html"
             }
           },
           {
             "id": "18",
             "title": "Anime đồng nhân",
             "full_list": {
-              "url": "https://uukanshu.cc/class_9_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_9_{page}.html"
             }
           },
           {
             "id": "19",
             "title": "Loại khác",
             "full_list": {
-              "url": "https://uukanshu.cc/class_10_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/class_10_{page}.html"
             }
           },
           {
             "id": "20",
             "title": "Đã hoàn thành",
             "full_list": {
-              "url": "https://uukanshu.cc/quanben/{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/quanben/{page}.html"
             }
           },
           {
             "id": "1",
             "title": "Tổng lượt xem ",
             "full_list": {
-              "url": "https://uukanshu.cc/top/allvisit_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/top/allvisit_{page}.html"
             }
           },
           {
             "id": "2",
             "title": "Tổng bình chọn",
             "full_list": {
-              "url": "https://uukanshu.cc/top/allvote_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/top/allvote_{page}.html"
             }
           },
           {
             "id": "3",
             "title": "Xếp hạng tháng",
             "full_list": {
-              "url": "https://uukanshu.cc/top/monthvisit_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/top/monthvisit_{page}.html"
             }
           },
           {
             "id": "4",
             "title": "Đề xuất tháng",
             "full_list": {
-              "url": "https://uukanshu.cc/top/monthvote_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/top/monthvote_{page}.html"
             }
           },
           {
             "id": "7",
             "title": "Mới bổ sung",
             "full_list": {
-              "url": "https://uukanshu.cc/top/postdate_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/top/postdate_{page}.html"
             }
           },
           {
             "id": "9",
             "title": "Bộ sưu tập",
             "full_list": {
-              "url": "https://uukanshu.cc/top/goodnum_{page}.html",
-              "ret_type": "html",
-              "list": ".bookinfo",
-              "title": "",
-              "href": ".bookname",
-              "image": "",
-              "tran_image": "https://image.uukanshu.cc/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://uukanshu.cc/top/goodnum_{page}.html"
             }
           }
         ]
@@ -777,12 +576,7 @@
             "chapter_count"
           ]
         },
-        "topics": [
-          {
-            "id": "1",
-            "title": "Tiểu thuyết VIP mới nhất",
-            "full_list": {
-              "url": "https://www.piaotia.com/booktoppostdate/0/{page}.html ",
+        "topic_full_list":{
               "ret_type": "html",
               "list": "tr:not(:first-child)",
               "title": "",
@@ -790,132 +584,76 @@
               "image": "",
               "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
               "convert_chinese":true
+        },
+        "topics": [
+          {
+            "id": "1",
+            "title": "Tiểu thuyết VIP mới nhất",
+            "full_list": {
+              "url": "https://www.piaotia.com/booktoppostdate/0/{page}.html "
             }
           },
           {
             "id": "2",
             "title": "Huyền huyễn ma pháp",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort1/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort1/0/{page}.html"
             }
           },
           {
             "id": "3",
             "title": "Võ hiệp tu chân",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort2/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort2/0/{page}.html"
             }
           },
           {
             "id": "4",
             "title": "Đô thị ngôn tình",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort3/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort3/0/{page}.html"
             }
           },
           {
             "id": "5",
             "title": "Lịch sử quân sự",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort4/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort4/0/{page}.html"
             }
           },
           {
             "id": "6",
             "title": "Võng du thi đấu",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort5/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort5/0/{page}.html"
             }
           },
           {
             "id": "7",
             "title": "Tiểu thuyết khoa huyễn",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort6/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort6/0/{page}.html"
             }
           },
           {
             "id": "8",
             "title": "Kinh khủng linh dị",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort7/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort7/0/{page}.html"
             }
           },
           {
             "id": "9",
             "title": "Đồng nhân manga",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort8/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort8/0/{page}.html"
             }
           },
           {
             "id": "10",
-            "title": "Cái loại hình khác",
+            "title": "Các loại hình khác",
             "full_list": {
-              "url": "https://www.piaotia.com/booksort9/0/{page}.html",
-              "ret_type": "html",
-              "list": "tr:not(:first-child)",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://www.piaotia.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://www.piaotia.com/booksort9/0/{page}.html"
             }
           }
 
@@ -982,159 +720,91 @@
             "chapter_count"
           ]
         },
+        "topic_full_list":{
+            "ret_type": "html",
+            "list": ".newnav",
+            "title": "",
+            "href": "a",
+            "image": "",
+            "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
+            "convert_chinese":true
+        },
         "topics": [
           {
             "id": "00",
             "title": "Các thể loại",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/0/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/0/{page}.htm"
             }
           },
           {
             "id": "01",
             "title": "Xem nhiều",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/3/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/3/{page}.htm"
             }
           },
           {
             "id": "02",
             "title": "Huyền huyễn ma pháp",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/1/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/1/{page}.htm"
             }
           },
           {
             "id": "03",
             "title": "Tu chân vũ hiệp",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/2/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/2/{page}.htm"
             }
           },
           {
             "id": "05",
             "title": "Đô thị tiểu thuyết",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/9/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/9/{page}.htm"
             }
           },
           {
             "id": "06",
             "title": "Lịch sử quân sự",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/4/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/4/{page}.htm"
             }
           },
           {
             "id": "07",
             "title": "Du hí cạnh kỹ",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/5/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/5/{page}.htm"
             }
           },
           {
             "id": "08",
             "title": "Khoa huyễn không gian",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/6/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/6/{page}.htm"
             }
           },
           {
             "id": "09",
             "title": "Kinh dị tiểu thuyết",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/7/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/7/{page}.htm"
             }
           },
           {
             "id": "10",
             "title": "Đồng nhân tiểu thuyết",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/8/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/8/{page}.htm"
             }
           },
           {
             "id": "11",
             "title": "Quan trường",
             "full_list": {
-              "url": "https://69shuba.cx/blist/class/10/{page}.htm",
-              "ret_type": "html",
-              "list": ".newnav",
-              "title": "",
-              "href": "a",
-              "image": "",
-              "tran_image": "https://static.69shuba.com/files/article/image/{image_id}s.jpg",
-              "convert_chinese":true
+              "url": "https://69shuba.cx/blist/class/10/{page}.htm"
             }
           }
         ]
