@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": ".",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -1146,7 +1146,7 @@
         "tran_image_": "https://69shuba.cx{image}",
         "detail": ".booknav2 a",
         "summary_": ".booknav2 p, #jianjie-popup",
-        "summary": ".navtxt",
+        "summary": ".navtxt, #jianjie-popup",
         "category": ".booknav2 :nth-child(3) a",
         "book_id": ".addbtn a",
         "convert_chinese":true,
@@ -1198,96 +1198,62 @@
             "chapter_count"
           ]
         },
+        "topic_full_list":{
+            "ret_type": "html",
+            "list": ".list li",
+            "title": "",
+            "href": "a",
+            "image": "img",
+            "convert_chinese":true
+        },
         "topics": [
           {
             "id": "00",
             "title": "Mới cập nhật",
             "full_list": {
-              "url": "https://m.ilwxs.com/lastupdate/{page}/",
-              "ret_type": "html",
-              "list": ".list li",
-              "title": "",
-              "href": "a",
-              "image": "img",
-              "convert_chinese":true
+              "url": "https://m.ilwxs.com/lastupdate/{page}/"
             }
           },
           {
             "id": "01",
             "title": "Huyền huyễn ma pháp",
             "full_list": {
-              "url": "https://m.ilwxs.com/leibie1_{page}.html",
-              "ret_type": "html",
-              "list": ".list li",
-              "title": "",
-              "href": "a",
-              "image": "img",
-              "convert_chinese":true
+              "url": "https://m.ilwxs.com/leibie1_{page}.html"
             }
           },
           {
             "id": "02",
             "title": "Võ hiệp tu chân",
             "full_list": {
-              "url": "https://m.ilwxs.com/leibie2_{page}.html",
-              "ret_type": "html",
-              "list": ".list li",
-              "title": "",
-              "href": "a",
-              "image": "img",
-              "convert_chinese":true
+              "url": "https://m.ilwxs.com/leibie2_{page}.html"
             }
           },
           {
             "id": "04",
             "title": "Lịch sử quân sự",
             "full_list": {
-              "url": "https://m.ilwxs.com/leibie4_{page}.html",
-              "ret_type": "html",
-              "list": ".list li",
-              "title": "",
-              "href": "a",
-              "image": "img",
-              "convert_chinese":true
+              "url": "https://m.ilwxs.com/leibie4_{page}.html"
             }
           },
           {
             "id": "05",
             "title": "Thám tử suy luận",
             "full_list": {
-              "url": "https://m.ilwxs.com/leibie5_{page}.html",
-              "ret_type": "html",
-              "list": ".list li",
-              "title": "",
-              "href": "a",
-              "image": "img",
-              "convert_chinese":true
+              "url": "https://m.ilwxs.com/leibie5_{page}.html"
             }
           },
           {
             "id": "06",
             "title": "Võng du anime",
             "full_list": {
-              "url": "https://m.ilwxs.com/leibie6_{page}.html",
-              "ret_type": "html",
-              "list": ".list li",
-              "title": "",
-              "href": "a",
-              "image": "img",
-              "convert_chinese":true
+              "url": "https://m.ilwxs.com/leibie6_{page}.html"
             }
           },
           {
             "id": "03",
             "title": "Đô thị ngôn tình",
             "full_list": {
-              "url": "https://m.ilwxs.com/leibie3_{page}.html",
-              "ret_type": "html",
-              "list": ".list li",
-              "title": "",
-              "href": "a",
-              "image": "img",
-              "convert_chinese":true
+              "url": "https://m.ilwxs.com/leibie3_{page}.html"
             }
           }
         ]
@@ -1319,6 +1285,7 @@
         "href": "",
         "title": ".headline",
         "content": ".content",
+        "tran_content":"{title}\n{content}",
         "convert_chinese":true,
         "retry_editor_index":[3, 2, 1],
         "next_prev": {
