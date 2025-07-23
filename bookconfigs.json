@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": "-",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -700,8 +700,8 @@
       "id": "5",
       "timeout": "60000",
       "headers": {
-        "Cookie": "cf_chl_rc_m=1; cf_clearance=aGIRBZeTtTxn.mZb01zD36WuorMqts02dc4.znar3XE-1726885867-1.2.1.1-icta67bUr.K_W_HChP1TJx6rGTr6yCUrKWm7HqEVhFVSzFuyJJzvbzvyQC5nr.ytRd7gUhdTi9RQI_v9eGwzPdiu8_GL6tHV32_y_tnIgDIdkfelQCoc440Zs0uxxJf70Tp32daLBkue8cQdqRyPTWEvJ0t2F8B67K8ZPd9eSoauiYjq9KotYFB_GnetvFIKDEQLIyAb280gM_PG9znd_XC8QtibfHBgKJFp2xnHRECOX2wzMJ_BfQwQpERtDV2_bcnvn3mLnzBym0eOBtKSXYtDVuzvvVzVVHuCQF09vJg7yu0L.H2TjFNCWUGFBCIQElCKrn8FEC7oMpmimQMWtP_mwwSHTZg_CWEn8Ecm6VVE9lTeHOkMG.vw7jiZVYo0F_1lKNzKTigKF_twEu7QdQ8rylYGtoU_70a_o3mWkHerw4ycThznUYWtQ2cWi6Bu; zh_choose=s;g_action=1748504992@eCY91VUkOFYeW4mrktpymB+cW2yOZyH3TFGVS6Q+LEh6Pb16ZZrRanfwH09dcK8RrkLGjgLnQgmBsg==",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "Cookie": "cf_clearance=YAggxjL4gZj.bmWi6ZSz40UuFEJmwPQBr8lzuryDeLs-1753240598-1.2.1.1-D_ErCIBfuIXvvK8NpVSoM2OW59r87fdHufO3al.4nDQY35xAwb05m_fHy96K6k_EP4fgrCkiD5AK6kokpznvB3iO8wZWTqeW3YmYg4erPzaE5wR6MDz3OTfkp50Ct3frHXDjvssCV9zezomLZL7HQXRu0twErPDAENfcRJuVj_romUxKjMzi9ZIOyD3mudSrjlfiXt6.KK5EVtkis8jaKCdagD9dZ1lTyfV.7.HULJI; zh_choose=s; shuba=13405-9208-22681-5149; _ga=GA1.1.1945714994.1753240600; _ga_04LTEL5PWY=GS2.1.s1753240599$o1$g0$t1753240599$j60$l0$h0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
         "Cache-Control":"no-cache"
       },
       "charset_repl":{"text":["<meta charset=\"gbk\">"], "charset":"gbk"},
