@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": "-",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -560,7 +560,7 @@
       "headers": {
         "User-Agent": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36"
       },
-      "charset_repl":{"text":["content=\"text/html; charset=gbk\"","content=\"text/html; charset=gb2312\""], "charset":"gbk"},      
+      "charset_repl":{"text":["text/html; charset=gbk","content=\"text/html; charset=gbk\"","content=\"text/html; charset=gb2312\""], "charset":"gbk"},      
       "home": {
         "url": "https://www.piaotia.com/",
         "search": {
@@ -700,7 +700,7 @@
       "id": "5",
       "timeout": "60000",
       "headers": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
         "Cache-Control":"no-cache"
       },
       "charset_repl":{"text":["<meta charset=\"gbk\">"], "charset":"gbk"},
