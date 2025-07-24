@@ -700,7 +700,7 @@
       "id": "5",
       "timeout": "60000",
       "headers": {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36",
         "Cache-Control":"no-cache"
       },
       "charset_repl":{"text":["<meta charset=\"gbk\">"], "charset":"gbk"},
@@ -849,7 +849,7 @@
       "timeout": "60000",
       "headers": {
         "Cookie": "waf_sc=5889647726; Hm_lvt_eae1bd5c55820d0df4c0e0dd387e0e0d=1748319754; HMACCOUNT=C6B32846600A9D1E; novel_333370=200281881%7C1748319828; Hm_lpvt_eae1bd5c55820d0df4c0e0dd387e0e0d=1748319901",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Mobile Safari/537.36",
         "Cache-Control":"no-cache"
       },
       "home": {
