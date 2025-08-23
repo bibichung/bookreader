@@ -1,5 +1,5 @@
 {
-  "version": "-",
+  "version": "*",
   "editor": [
     {
       "model_name": "gpt-4o-mini",
@@ -26,7 +26,8 @@
       "max_translate_length":16000,
       "prompt": "Hãy biên tập chương truyện võ hiệp, tiêp hiệp sau và chỉ trả lại nội dung sau khi biên tập. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện,vui lòng chuyển sang phiên âm Hán Việt. Biên tập sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Hãy trả lời bằng tiếng Việt. Sau đây là nội dung chương truyện: {query}",
       "prompt_translate2": "chương truyện:\n{query}\nHãy dịch chương truyện võ hiệp, tiên hiệp trên sang tiếng Việt và chỉ trả lại kết quả dịch. Với các thuật ngữ tu luyện, vui lòng chuyển sang phiên âm Hán Việt.",
-      "prompt_translate": "[CHAPTER_CONTENT] {query}\n[SYSTEM] Bạn là một dịch giả chuyên nghiệp, chuyên dịch truyện {category} từ tiếng Trung sang tiếng Việt một cách tự nhiên, chính xác và phù hợp ngữ cảnh, giữ được văn phong gốc.",
+      "prompt_translate3": "[CHAPTER_CONTENT] {query}\n[SYSTEM] Bạn là một dịch giả chuyên nghiệp, chuyên dịch truyện {category} từ tiếng Trung sang tiếng Việt một cách tự nhiên, chính xác và phù hợp ngữ cảnh, giữ được văn phong gốc.",
+      "prompt_translate": "Bạn là một dịch giả chuyên nghiệp. \nNhiệm vụ của bạn: dịch toàn bộ chương truyện {category} tiếng Trung được cung cấp sang tiếng Việt. \nYêu cầu: \n- Giữ đúng nội dung gốc, không thêm hoặc lược bỏ chi tiết. \n- Văn phong tự nhiên, mượt mà như một chương truyện dịch xuất bản. \n- Giữ nguyên tên nhân vật, địa danh, thuật ngữ tu tiên hoặc võ hiệp. \n- Không chèn lời giải thích, không nhắc đến việc dịch. \n--- \nChương truyện gốc: \n{query}"
       "replacement":["#","","*",""]
     },
     {
@@ -39,7 +40,7 @@
       "max_translate_length":4000,
       "prompt": "Hãy biên tập chương truyện võ hiệp, tiêp hiệp sau và chỉ trả lại nội dung sau khi biên tập. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện,vui lòng chuyển sang phiên âm Hán Việt. Biên tập sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Hãy trả lời bằng tiếng Việt. Sau đây là nội dung chương truyện: {query}",
       "prompt_translate2": "chương truyện:\n{query}\nHãy dịch chương truyện võ hiệp, tiên hiệp trên sang tiếng Việt và chỉ trả lại kết quả dịch. Với các thuật ngữ tu luyện, vui lòng chuyển sang phiên âm Hán Việt.",
-      "prompt_translate": "[CHAPTER_CONTENT] {query}\n[SYSTEM] Bạn là một dịch giả chuyên nghiệp, chuyên dịch truyện {category} từ tiếng Trung sang tiếng Việt một cách tự nhiên, chính xác và phù hợp ngữ cảnh, giữ được văn phong gốc.",
+      "prompt_translate": "Bạn là một dịch giả chuyên nghiệp. \nNhiệm vụ của bạn: dịch toàn bộ chương truyện {category} tiếng Trung được cung cấp sang tiếng Việt. \nYêu cầu: \n- Giữ đúng nội dung gốc, không thêm hoặc lược bỏ chi tiết. \n- Văn phong tự nhiên, mượt mà như một chương truyện dịch xuất bản. \n- Giữ nguyên tên nhân vật, địa danh, thuật ngữ tu tiên hoặc võ hiệp. \n- Không chèn lời giải thích, không nhắc đến việc dịch. \n--- \nChương truyện gốc: \n{query}"
       "replacement":["#","","*",""]
     }
   ],
