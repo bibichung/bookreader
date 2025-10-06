@@ -1,8 +1,8 @@
 {
-  "version": "*",
+  "version": ".",
   "llm":{
     "gemini":{
-      "base_url":"https://generativelanguage.googleapis.com/v1beta/openai/",
+      "base_url":"https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
       "api_key_name":"GEMINI_API_KEY",
       "temperature": 1,
       "top_p": 0.95,
