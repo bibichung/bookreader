@@ -1,5 +1,5 @@
 {
-  "version": "*",
+  "version": ".",
   "llm":{
     "gemini":{
       "base_url":"https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
@@ -13,7 +13,7 @@
     {
       "model_family":"gemini",
       "model_name": "gemini-2.5-flash-lite",
-      "reasoning_effort":"medium",
+      "reasoning_effort":"low",
       "max_output_tokens": 40000,
       "max_input_length": 80000,
       "max_translate_length":20000,
