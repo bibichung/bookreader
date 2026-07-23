@@ -19,7 +19,7 @@
   "editor": [
     {
       "model_family":"gemini",
-      "model_name": "gemini-flash-lite-latest",
+      "model_name": "gemini-3.1-flash-lite",
       "reasoning_effort":"low",
       "max_output_tokens": 40000,
       "max_input_length": 80000,
