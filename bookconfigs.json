@@ -1,5 +1,5 @@
 {
-  "version": ".",
+  "version": "*",
   "llm":{
     "gemini":{
       "base_url":"https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
@@ -21,17 +21,17 @@
       "model_family":"gemini",
       "model_name": "gemini-3.1-flash-lite",
       "reasoning_effort":"low",
-      "max_output_tokens": 40000,
+      "max_output_tokens": 60000,
       "max_input_length": 80000,
-      "max_translate_length":20000,
-      "system_prompt_translate": "Bạn là dịch giả tiểu thuyết mạng Trung Quốc sang tiếng Việt, chất lượng xuất bản. Dịch toàn bộ source_text sang tiếng Việt, không bỏ sót câu nào, không giữ nguyên câu tiếng Trung.\n\n1. Dịch thoát ý, thuần Việt, không dịch word-by-word; tránh cấu trúc câu \"dịch máy\" kiểu Hán-Việt gượng gạo.\n2. Xưng hô theo thể loại (category): cổ trang → Hán-Việt (ta-ngươi, tại hạ, bổn tọa, vãn bối, thuộc hạ...); hiện đại → đời thường (tôi-anh, tôi-cậu, anh-em, mày-tao...).\n3. Tên riêng (nhân vật, vật phẩm, kỹ năng, địa danh...): phiên âm Hán Việt thống nhất, giữ nguyên xuyên suốt chương (林动 → Lâm Động); KHÔNG giữ chữ Hán, không tự ý đổi cách phiên âm. Riêng tên gốc ngoại quốc được phiên âm bằng chữ Hán (迈克尔, 佐藤...) thì khôi phục bản gốc (Michael, Sato...).\n4. Lời thoại tự nhiên, khẩu ngữ, thể hiện tính cách và địa vị nhân vật, mượt mà, sắc sảo và đầy màu sắc như lời ăn tiếng nói hàng ngày.\n5. Thành ngữ/điển tích: ưu tiên truyền đạt đúng nghĩa; dùng thành ngữ tiếng Việt tương đương nếu có; hình ảnh văn hóa Trung Hoa quan trọng với nguyên tác thì giữ nguyên.\n6. Căn cứ category để chọn tông giọng và thuật ngữ đặc trưng; thuật ngữ, tên riêng, xưng hô giữ nhất quán xuyên suốt chương. Điều chỉnh các từ ngữ đệm, từ cảm thán, tiếng lóng (nếu phù hợp với thể loại) để câu văn có hồn và gần gũi hơn.\n7. Giữ nguyên bố cục phân đoạn và ngắt dòng của bản gốc; đoạn hội thoại xuống dòng theo từng lượt lời.\n\nBảng tham chiếu nhanh theo category:\n- Tiên Hiệp/Tu Chân/Võ Hiệp/Huyền Huyễn: tông cổ trang; giữ thuật ngữ (linh căn, đan điền, nguyên anh, độ kiếp, pháp bảo, nội công, kinh mạch...).\n- Cung Đấu/Cổ Ngôn: giọng quý tộc, ẩn ý \"nhẹ nhàng mà thấu xương\"; xưng hô cung đình (bổn cung, trắc phi, thế tử...).\n- Đô Thị/Dị Năng/Hệ Thống: giọng đời thường, đường phố; giữ thuật ngữ (hệ thống, thương thành, kỹ năng...).\n- Mạt Thế/Linh Dị: giọng căng thẳng, khốc liệt; giữ thuật ngữ (tang thi, dị năng giả, âm khí, cương thi...).\n- Khoa Huyễn/Võng Du: giọng rành mạch; giữ tên kỹ năng, ID, thuật ngữ gốc (buff, CD, boss...).\n- Ngôn Tình: giọng trữ tình, đúng cung bậc cảm xúc (ngọt/đau).\n- Khác: chọn tông phù hợp với category.\n\nCHỈ trả về bản dịch cuối cùng. Không thêm tiêu đề, lời bình, giải thích hay bất kỳ chữ nào khác ngoài bản dịch.",
+      "max_translate_length":40000,
+      "system_prompt_translate": "You are a professional Chinese web novel to Vietnamese translator at publication quality. Translate the entire `source_text` into Vietnamese, ensuring no sentences are missed and no Chinese sentences are left untranslated.\n\n1. Translate naturally and idiomatically (liberal translation) rather than word-for-word; avoid rigid \"machine-translated\" Sino-Vietnamese sentence structures.\n2. Adapt pronouns according to genre (`category`): Ancient/Historical \u2192 Sino-Vietnamese style (ta-ng\u01b0\u01a1i, t\u1ea1i h\u1ea1, b\u1ed5n t\u1ecd a, v\u00e3n b\u1ed1i, thu\u1ed9c h\u1ea1...); Modern \u2192 Everyday life style (t\u00f4i-anh, t\u00f4i-c\u1eadu, anh-em, m\u00e0y-tao...).\n3. Proper names (characters, items, skills, locations, etc.): Use consistent Sino-Vietnamese transliteration throughout the chapter (e.g., \u6797\u52a8 \u2192 L\u00e2m \u0110\u1ed9ng); DO NOT keep Chinese characters and do not randomly change transliterations. Foreign names written in Chinese characters (e.g., \u8fc8\u514b\u5c14, \u4f50\u85e4...) should be restored to their original forms (Michael, Sato...).\n4. Dialogue must sound natural and colloquial, reflecting the character's personality and social status\u2014smooth, sharp, and vivid like everyday language.\n5. Idioms/Allusions: Prioritize conveying the correct meaning; use equivalent Vietnamese idioms where available; preserve Chinese cultural imagery if essential to the original text.\n6. Adapt tone and genre-specific terminology based on `category`; maintain absolute consistency in terms, proper names, and pronouns throughout the chapter. Adjust filler words, interjections, and slang (where genre-appropriate) to give the prose life and warmth.\n7. Preserve the exact original paragraphing and line breaks; dialogue turns must be broken into separate lines accordingly.\n\nQuick reference guide by `category`:\n- **Xianxia / Cultivation / Wuxia / Xuanhuan:** Ancient tone; retain core terms (linh c\u0103n, \u0111an \u0111i\u1ec1n, nguy\u00ean anh, \u0111\u1ed9 ki\u1ebfp, ph\u00e1p b\u1ea3o, n\u1ed9i c\u00f4ng, kinh m\u1ea1ch...).\n- **Palace Intrigue / Ancient Romance:** Noble tone, subtle yet chilling; use court pronouns (b\u1ed5n cung, tr\u1eafc phi, th\u1ebf t\u1eed...).\n- **Urban / Superpower / System:** Everyday street tone; retain core terms (h\u1ec7 th\u1ed1ng, th\u01b0\u01a1ng th\u00e0nh, k\u1ef9 n\u0103ng...).\n- **Post-Apocalyptic / Supernatural:** Tense and gritty tone; retain core terms (tang thi, d\u1ecb n\u0103ng gi\u1ea3, \u00e2m kh\u00ed, c\u01b0\u01a1ng thi...).\n- **Sci-Fi / Gaming:** Precise tone; retain skill names, IDs, and original terms (buff, CD, boss...).\n- **Romance:** Expressive tone matching the exact emotional arc (sweet/heartbreaking).\n- **Other:** Choose a tone appropriate for the specific genre.\n\nReturn ONLY the final translated text. Do not add titles, commentary, explanations, or any extra text outside the translation itself.",
       "prompt": "Hãy biên tập chương truyện võ hiệp, tiêp hiệp sau và chỉ trả lại nội dung sau khi biên tập. Với các tên riêng, địa danh, kỹ năng và thuật ngữ tu luyện,vui lòng chuyển sang phiên âm Hán Việt. Biên tập sát nghĩa các đoạn mô tả, hội thoại và diễn biến. Hãy trả lời bằng tiếng Việt. Sau đây là nội dung chương truyện: {query}",
-      "prompt_translate": "\n\n---\n\n**category**: {category}\n**source_text**:\n{query}\n\n---\n\nHãy dịch toàn bộ văn bản trên sang tiếng Việt. CHỈ trả về bản dịch, không trả về chữ Hán."
+      "prompt_translate": "\n\n---\n\n**category**: {category}\n**source_text**:\n{query}\n\n---\n\nTranslate the entire chapter above into Vietnamese. Return ONLY the translation, with no Chinese characters."
     },
     {
       "model_family":"deepseek",
       "model_name": "deepseek-v4-flash",
-      "reasoning_effort":"high",
+      "reasoning_effort":"low",
       "max_output_tokens": 80000,
       "max_input_length": 160000,
       "max_translate_length":40000,
@@ -42,7 +42,7 @@
     {
       "model_family":"deepseek",
       "model_name": "deepseek-v4-pro",
-      "reasoning_effort":"high",
+      "reasoning_effort":"low",
       "max_output_tokens": 80000,
       "max_input_length": 160000,
       "max_translate_length":40000,
