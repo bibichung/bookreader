@@ -1,18 +1,14 @@
 {
-  "version": ".",
+  "version": "*",
   "llm":{
     "gemini":{
       "base_url":"https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
       "api_key_name":"GEMINI_API_KEY",
-      "temperature": 0.4,
-      "top_p": 0.95,
       "replacement":["#","","*",""]
     },
     "deepseek":{
       "base_url":"https://api.deepseek.com/chat/completions",
       "api_key_name":"DEEPSEEK_API_KEY",
-      "temperature": 0.4,
-      "top_p": 0.95,
       "replacement":["#","","*",""]
     }
   },
@@ -20,7 +16,6 @@
     {
       "model_family":"gemini",
       "model_name": "gemini-3.1-flash-lite",
-      "reasoning_effort":"low",
       "max_output_tokens": 60000,
       "max_input_length": 80000,
       "max_translate_length":40000,
@@ -31,7 +26,6 @@
     {
       "model_family":"deepseek",
       "model_name": "deepseek-flash",
-      "reasoning_effort":"low",
       "max_output_tokens": 80000,
       "max_input_length": 160000,
       "max_translate_length":40000,
